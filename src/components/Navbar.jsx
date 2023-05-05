@@ -18,10 +18,6 @@ const Navbar = () => {
       link: "/events",
     },
     {
-      name: "Team",
-      link: "/team",
-    },
-    {
       name: "Contact",
       link: "/contact",
     },

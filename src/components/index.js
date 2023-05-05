@@ -10,5 +10,6 @@ import Process from "./Process";
 import About from "./About";
 import Service from "./Service";
 import Team from "./Team";
+import ContactForm from "./ContactForm";
 
-export { Navbar, Footer, Layout, Header, EventsOrganized, Partner, Work, Message, Process, About, Service, Team };
+export { Navbar, Footer, Layout, Header, EventsOrganized, Partner, Work, Message, Process, About, Service, Team, ContactForm };

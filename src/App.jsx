@@ -4,7 +4,7 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
-import { Home, About, Contact, Team, Events, NotFound } from "./pages";
+import { Home, About, Contact, Events, NotFound } from "./pages";
 import { Layout } from "./components";
 
 const App = () => {
@@ -45,16 +45,6 @@ const App = () => {
         <Layout>
           <Routes>
             <Route path="/" element={<Contact />} />
-          </Routes>
-        </Layout>
-      ),
-    },
-    {
-      path: "/Team",
-      element: (
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Team />} />
           </Routes>
         </Layout>
       ),
