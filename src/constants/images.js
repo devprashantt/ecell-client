@@ -16,6 +16,9 @@ import work1 from './../assets/work/work1.svg';
 import work2 from './../assets/work/work2.svg';
 import work3 from './../assets/work/work3.svg';
 
+import process from './../assets/process.svg';
+import about from './../assets/about.svg';
+
 export default {
     message,
     company1,
@@ -31,5 +34,7 @@ export default {
     company11,
     work1,
     work2,
-    work3
+    work3,
+    process,
+    about
 };

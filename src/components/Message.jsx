@@ -22,7 +22,7 @@ const Message = ({ heading, description }) => {
       <div
         style={{
           height: "8rem",
-          border: "4px solid #E2E2E2",
+          border: "3px solid #E2E2E2",
           margin: "0 2rem",
           borderRadius: "5px",
         }}
