@@ -18,6 +18,7 @@ import work3 from './../assets/work/work3.svg';
 
 import process from './../assets/process.svg';
 import about from './../assets/about.svg';
+import job from './../assets/job.svg';
 
 export default {
     message,
@@ -36,5 +37,6 @@ export default {
     work2,
     work3,
     process,
-    about
+    about,
+    job
 };

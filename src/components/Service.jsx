@@ -95,7 +95,11 @@ const Service = () => {
         >
           Ultimate Services for your businesses.
         </h1>
-        <p>
+        <p
+          style={{
+            color: "rgba(0, 0, 0, 0.5)",
+          }}
+        >
           Nunc, porta phasellus nisl ac risus eget lectus neque, mauris.
           Dictumst mauris, id eget tellus tincidunt sit nisi, non cras.{" "}
         </p>
@@ -118,7 +122,6 @@ const Service = () => {
                   justifyContent: "flex-start",
                   alignItems: "flex-start",
 
-                  flex: 1,
                   maxWidth: "300px",
                   gap: "20px",
                 }}
@@ -149,6 +152,7 @@ const Service = () => {
                 <p
                   style={{
                     margin: "0",
+                    color: "rgba(0, 0, 0, 0.5)",
                   }}
                 >
                   {service.description.substring(0, 100)}

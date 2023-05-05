@@ -9,5 +9,6 @@ import Message from "./Message";
 import Process from "./Process";
 import About from "./About";
 import Service from "./Service";
+import Team from "./Team";
 
-export { Navbar, Footer, Layout, Header, EventsOrganized, Partner, Work, Message, Process, About, Service };
+export { Navbar, Footer, Layout, Header, EventsOrganized, Partner, Work, Message, Process, About, Service, Team };
