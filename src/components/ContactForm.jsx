@@ -2,15 +2,18 @@ import { useState } from "react";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    first_name: "",
+    last_name: "",
     email: "",
     phone: "",
-    address: "",
+    city: "",
+    state: "",
+    message: "",
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isError, setIsError] = useState(false);
+  const [active, setActive] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
 
@@ -23,16 +26,20 @@ function ContactForm() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setActive(true);
     setIsDisabled(true);
 
     try {
-      const response = await fetch("url-to-submit-form-data", {
-        method: "POST",
-        body: JSON.stringify(formData),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await fetch(
+        `${import.meta.env.VITE_BACKEND_HOST}/contact`,
+        {
+          method: "POST",
+          body: JSON.stringify(formData),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       const data = await response.json();
 
@@ -42,6 +49,7 @@ function ContactForm() {
 
       setIsSubmitted(true);
       setIsSuccess(true);
+      setActive(false);
       console.log("Form submitted successfully", data);
     } catch (error) {
       setIsSubmitted(true);
@@ -84,8 +92,8 @@ function ContactForm() {
             type="text"
             id="firstName"
             placeholder="First name"
-            name="firstName"
-            value={formData.firstName}
+            name="first_name"
+            value={formData.first_name}
             onChange={handleChange}
             disabled={isDisabled}
           />
@@ -103,8 +111,8 @@ function ContactForm() {
             type="text"
             id="lastName"
             placeholder="Last name"
-            name="lastName"
-            value={formData.lastName}
+            name="last_name"
+            value={formData.last_name}
             onChange={handleChange}
             disabled={isDisabled}
           />
@@ -216,13 +224,13 @@ function ContactForm() {
           gap: "0.8rem",
         }}
       >
-        <label htmlFor="address">Address:</label>
+        <label htmlFor="address">Message:</label>
         <input
           type="text"
-          id="address"
-          placeholder="Enter your address"
-          name="address"
-          value={formData.address}
+          id="message"
+          placeholder="Enter your message"
+          name="message"
+          value={formData.message}
           onChange={handleChange}
           disabled={isDisabled}
         />
@@ -238,6 +246,7 @@ function ContactForm() {
         }}
       >
         <button
+          type="submit"
           style={{
             padding: "0 2rem",
             height: "50px",
@@ -248,7 +257,7 @@ function ContactForm() {
             cursor: "pointer",
           }}
         >
-          Submit now
+          {active ? "Sending..." : "Send"}
         </button>
       </div>
     </form>
