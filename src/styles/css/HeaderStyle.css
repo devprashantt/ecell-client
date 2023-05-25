@@ -16,6 +16,9 @@
   }
 }
 @media (max-width: 768px) {
+  .header {
+    height: 70vh;
+  }
   .header-hero-img {
     width: 15em;
   }
@@ -26,6 +29,9 @@
   }
 }
 @media (max-width: 576px) {
+  .header {
+    height: 60vh;
+  }
   .header-hero-img {
     display: none;
   }

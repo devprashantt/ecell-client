@@ -4,6 +4,7 @@
   }
   .eventsOrganized-component > h1 {
     font-size: 1.8rem;
+    text-align: center;
   }
   .eventsOrganized-events {
     display: flex !important;

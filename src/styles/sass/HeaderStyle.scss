@@ -22,6 +22,10 @@
 }
 
 @include viewport.responsive(viewport.$med-lg) {
+    .header {
+        height: 70vh;
+    }
+
     .header-hero-img {
         width: 15em;
     }
@@ -35,6 +39,10 @@
 }
 
 @include viewport.responsive(viewport.$sm-med) {
+
+    .header {
+        height: 60vh;
+    }
 
     .header-hero-img {
         display: none;

@@ -1,0 +1,48 @@
+@media (max-width: 70em) {
+  .process-img {
+    width: 25rem;
+  }
+}
+@media (max-width: 60em) {
+  .process-component {
+    width: 70%;
+    text-align: center;
+  }
+  .process-img {
+    display: none;
+  }
+  .process-block-processes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2em;
+    column-gap: 4em;
+  }
+  .process-element-process {
+    flex-direction: column;
+  }
+  .process-element-process > span {
+    align-self: center;
+  }
+  .process-element-process > div {
+    text-align: left;
+  }
+}
+@media (max-width: 576px) {
+  .process-block-processes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .process-element-process > div {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 30em) {
+  .process-element-process > div {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=ProcessStyle.css.map */
