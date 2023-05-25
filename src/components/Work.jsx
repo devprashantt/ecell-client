@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 
+// import responsive styles
+import './../styles/css/WorkStyle.css';
+
 //import work img
 import { images } from "../constants";
 
@@ -62,6 +65,7 @@ const Work = () => {
           margin: "2rem 0",
           gap: "1.5rem",
         }}
+        className="work--block-images"
       >
         {works.map((work) => (
           <div key={work.id}>
@@ -72,6 +76,7 @@ const Work = () => {
                 maxWidth: "20rem",
                 minHeight: "20rem",
               }}
+              className="work--element-img"
             />
           </div>
         ))}
