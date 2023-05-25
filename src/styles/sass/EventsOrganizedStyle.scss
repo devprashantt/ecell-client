@@ -1,0 +1,16 @@
+@use 'viewport';
+
+@include viewport.responsive(viewport.$sm-med) {
+    .eventsOrganized-component {
+        max-width: 90%;
+    }
+
+    .eventsOrganized-component>h1 {
+        font-size: 1.8rem;
+    }
+
+    .eventsOrganized-events {
+        display: flex !important;
+        flex-direction: column;
+    }
+}
