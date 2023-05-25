@@ -1,0 +1,55 @@
+@use 'viewport';
+
+.header {
+    padding: 0 10%;
+    margin-top: -5vh;
+}
+
+@include viewport.responsive(viewport.$xl) {
+    .header-hero-img {
+        width: 22em;
+    }
+}
+
+@include viewport.responsive(viewport.$lg) {
+
+    .header-hero-img {
+        width: 20em;
+    }
+
+    .header-title {
+        font-size: 2rem !important;
+    }
+}
+
+@include viewport.responsive(viewport.$med-lg) {
+    .header-hero-img {
+        width: 15em;
+    }
+}
+
+@include viewport.responsive(viewport.$med) {
+
+    .header-hero-img {
+        width: 10em;
+    }
+}
+
+@include viewport.responsive(viewport.$sm-med) {
+
+    .header-hero-img {
+        display: none;
+    }
+}
+
+@include viewport.responsive(viewport.$sm) {
+
+    .header-title {
+        font-size: 1.5rem !important;
+    }
+
+    .header-summary {
+        font-size: 1rem !important;
+    }
+
+}

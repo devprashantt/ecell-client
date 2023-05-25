@@ -1,0 +1,22 @@
+@media (max-width: 43em) {
+  .navbar-links {
+    display: none;
+  }
+}
+@media (max-width: 30em) {
+  .navbar-link-contact {
+    font-size: 0.9rem;
+  }
+}
+.collapse-links--state-collapse {
+  display: none;
+}
+
+.collapse-links--state-open {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/*# sourceMappingURL=NavbarStyle.css.map */
