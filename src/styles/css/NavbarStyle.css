@@ -8,6 +8,10 @@
     font-size: 0.9rem;
   }
 }
+.state {
+  background-color: red;
+}
+
 .collapse-links--state-collapse {
   display: none;
 }

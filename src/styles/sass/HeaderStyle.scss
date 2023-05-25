@@ -2,7 +2,6 @@
 
 .header {
     padding: 0 10%;
-    margin-top: -5vh;
 }
 
 @include viewport.responsive(viewport.$xl) {
