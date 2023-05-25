@@ -1,0 +1,28 @@
+@use 'viewport';
+
+@include viewport.responsive(viewport.$med-lg) {
+
+    .message--block>h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@include viewport.responsive(viewport.$sm-med) {
+
+    .message--block>h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@include viewport.responsive(viewport.$sm) {
+
+    .message--block {
+        flex-direction: column;
+        padding: 1rem 5rem !important;
+    }
+
+    .message--block>div {
+        margin: -2em !important;
+        transform: rotate(90deg);
+    }
+}

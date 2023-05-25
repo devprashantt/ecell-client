@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+  .message--block > h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .message--block > h1 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 30em) {
+  .message--block {
+    flex-direction: column;
+    padding: 1rem 5rem !important;
+  }
+  .message--block > div {
+    margin: -2em !important;
+    transform: rotate(90deg);
+  }
+}
+
+/*# sourceMappingURL=MessageStyle.css.map */
