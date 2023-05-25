@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 
+// import responsive styles
+import './../styles/css/NavbarStyle.css';
+
 //hamburger menu from react-icons
 import { GiHamburgerMenu } from "react-icons/gi";
 
@@ -22,6 +25,17 @@ const Navbar = () => {
       link: "/contact",
     },
   ];
+
+  let state = "collapse";
+
+  const toggleCollapse = () => {
+    if (state === "collapse") {
+      state = "open";
+    } else {
+      state = "collapse";
+    }
+  }
+
   return (
     <header
       style={{
@@ -32,7 +46,7 @@ const Navbar = () => {
         backgroundColor: "white",
       }}
     >
-      {/* right part */}
+      {/* left part */}
       <a
         href="/"
         style={{
@@ -45,7 +59,7 @@ const Navbar = () => {
         E Cell <span>IIIT Sonepat</span>
       </a>
       {/* middle part */}
-      <div>
+      <div className="navbar-links">
         {menus.map((menu) => (
           <Link
             key={menu.name}
@@ -60,7 +74,7 @@ const Navbar = () => {
           </Link>
         ))}
       </div>
-      {/* left part */}
+      {/* right part */}
       <div
         style={{
           display: "flex",
@@ -79,10 +93,29 @@ const Navbar = () => {
             borderRadius: "1rem",
           }}
           to="/contact"
+          className="navbar-link-contact"
         >
           Connect with us
         </Link>
-        <GiHamburgerMenu size="2rem" />
+        <GiHamburgerMenu size="2rem" onClick={toggleCollapse} />
+      </div>
+
+      <div
+
+        className={`collapse-links--state-${state}`}>
+        {menus.map((menu) => (
+          <Link
+            key={menu.name}
+            style={{
+              padding: "0.5rem 1rem",
+              fontWeight: "normal",
+              color: "black",
+            }}
+            to={menu.link}
+          >
+            {menu.name}
+          </Link>
+        ))}
       </div>
     </header>
   );
