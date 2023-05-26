@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 //import components
 import { Message, Team } from "./../components";
 
+// import responsive styles
+import './../styles/css/AboutPage.css';
+
 //import images
 import { images } from "./../constants";
 
@@ -59,6 +62,7 @@ const About = () => {
           gap: "2rem",
           borderRadius: "0  2rem 2rem 0",
         }}
+        className="job--block"
       >
         <div
           style={{
@@ -68,6 +72,7 @@ const About = () => {
             alignItems: "start",
             paddingLeft: "3%",
           }}
+          className="job--block-text"
         >
           <h1
             style={{
@@ -91,11 +96,12 @@ const About = () => {
               background: "#6854FC",
               borderRadius: "20px",
             }}
+            className="job--element-openings"
           >
             View job openings
           </Link>
         </div>
-        <img src={images.job} alt="job" />
+        <img src={images.job} alt="job" className="job-image" />
       </div>
       <p>Blogs(Coming soon)</p>
     </div>

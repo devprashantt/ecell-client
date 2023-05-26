@@ -1,0 +1,58 @@
+@use 'viewport';
+
+.job--block {
+    border-radius: 0 !important;
+    padding: 2em;
+}
+
+@include viewport.responsive(viewport.$xl) {
+
+    .job-image {
+        width: 100%;
+        min-width: 35rem;
+    }
+}
+
+@include viewport.responsive(viewport.$lg) {
+
+    .job-image {
+        // width: 100%;
+        min-width: 20rem;
+    }
+}
+
+@include viewport.responsive(viewport.$med) {
+
+    .job--block {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .job--block-text {
+        width: 70%;
+    }
+
+    .job--element-openings {
+        align-self: center;
+    }
+
+    .job-image {
+        // width: 100%;
+        max-width: 30rem;
+    }
+}
+
+@include viewport.responsive(viewport.$sm) {
+
+    .job--block-text {
+        width: 70%;
+    }
+
+    .job--block-text>h1 {
+        font-size: 1.5rem;
+    }
+
+    .job-image {
+        width: 80%;
+    }
+}
