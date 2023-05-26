@@ -1,6 +1,7 @@
 @media (max-width: 576px) {
   .footer--block-links {
     justify-content: center;
+    flex-wrap: wrap;
   }
 }
 

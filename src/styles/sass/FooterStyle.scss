@@ -3,5 +3,6 @@
 @include viewport.responsive(viewport.$sm-med) {
     .footer--block-links {
         justify-content: center;
+        flex-wrap: wrap;
     }
 }
