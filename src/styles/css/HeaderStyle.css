@@ -8,6 +8,9 @@
   }
 }
 @media (max-width: 60em) {
+  .header {
+    height: 70vh !important;
+  }
   .header-hero-img {
     width: 20em;
   }
@@ -16,9 +19,6 @@
   }
 }
 @media (max-width: 768px) {
-  .header {
-    height: 70vh;
-  }
   .header-hero-img {
     width: 15em;
   }
@@ -30,7 +30,7 @@
 }
 @media (max-width: 576px) {
   .header {
-    height: 60vh;
+    height: 60vh !important;
   }
   .header-hero-img {
     display: none;

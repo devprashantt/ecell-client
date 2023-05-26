@@ -11,6 +11,9 @@
 }
 
 @include viewport.responsive(viewport.$lg) {
+    .header {
+        height: 70vh !important;
+    }
 
     .header-hero-img {
         width: 20em;
@@ -23,7 +26,7 @@
 
 @include viewport.responsive(viewport.$med-lg) {
     .header {
-        height: 70vh;
+        // height: 70vh;
     }
 
     .header-hero-img {
@@ -41,7 +44,7 @@
 @include viewport.responsive(viewport.$sm-med) {
 
     .header {
-        height: 60vh;
+        height: 60vh !important;
     }
 
     .header-hero-img {
