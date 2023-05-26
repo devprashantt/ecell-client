@@ -1,0 +1,26 @@
+service--block-services {
+  margin: 0;
+}
+
+@media (max-width: 60em) {
+  .service--component {
+    text-align: center;
+    width: 80%;
+  }
+  .service--component > img {
+    display: none;
+  }
+  .service--block-info {
+    align-items: center !important;
+  }
+  .service--element-link {
+    align-self: center;
+  }
+}
+@media (max-width: 30em) {
+  .service--element-heading {
+    font-size: 1.5rem !important;
+  }
+}
+
+/*# sourceMappingURL=ServiceStyle.css.map */

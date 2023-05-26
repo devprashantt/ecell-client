@@ -1,0 +1,32 @@
+@use 'viewport';
+
+service--block-services {
+    margin: 0;
+}
+
+@include viewport.responsive(viewport.$lg) {
+
+    .service--component {
+        text-align: center;
+        width: 80%;
+    }
+
+    .service--component>img {
+        display: none;
+    }
+
+    .service--block-info {
+        align-items: center !important;
+    }
+
+    .service--element-link {
+        align-self: center;
+    }
+}
+
+@include viewport.responsive(viewport.$sm) {
+
+    .service--element-heading {
+        font-size: 1.5rem !important;
+    }
+}
