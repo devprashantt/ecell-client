@@ -1,7 +1,3 @@
-service--block-services {
-  margin: 0;
-}
-
 @media (max-width: 60em) {
   .service--component {
     text-align: center;
@@ -12,9 +8,19 @@ service--block-services {
   }
   .service--block-info {
     align-items: center !important;
+    max-width: 15rem !important;
   }
   .service--element-link {
     align-self: center;
+  }
+}
+@media (max-width: 43em) {
+  .service--block-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
   }
 }
 @media (max-width: 30em) {
