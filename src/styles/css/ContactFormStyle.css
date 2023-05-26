@@ -1,0 +1,17 @@
+.form--component {
+  max-width: 80%;
+}
+
+@media (max-width: 43em) {
+  .form--component {
+    max-width: 95%;
+  }
+}
+@media (max-width: 576px) {
+  .form--component > div {
+    flex-direction: column;
+    max-width: 70%;
+  }
+}
+
+/*# sourceMappingURL=ContactFormStyle.css.map */
