@@ -36,6 +36,8 @@ const About = () => {
         <p
           style={{
             margin: "0",
+            padding: "0 2em",
+            textAlign: "center"
           }}
         >
           Pulvinar auctor nisl, volutpat turpis enim id.{" "}

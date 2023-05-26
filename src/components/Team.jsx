@@ -1,3 +1,6 @@
+// import responsive styles
+import './../styles/css/TeamStyle.css';
+
 const Team = () => {
   const team = [
     {
@@ -217,6 +220,7 @@ const Team = () => {
         padding: "0 3%",
         gap: "2rem",
       }}
+      className='team--component'
     >
       <h1
         style={{
@@ -244,6 +248,7 @@ const Team = () => {
           flexWrap: "wrap",
           maxWidth: "80%",
         }}
+        className='team--block-members'
       >
         {team.map((member, index) => (
           <div
@@ -255,6 +260,7 @@ const Team = () => {
               alignItems: "center",
               gap: "10px",
             }}
+            className='team--block-member-info'
           >
             <img
               src={member.img}
@@ -263,6 +269,7 @@ const Team = () => {
                 width: "150px",
                 height: " 150px",
                 borderRadius: "50%",
+                backgroundColor: "lightgray"
               }}
             />
             <h3
