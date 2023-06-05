@@ -1,0 +1,16 @@
+.partner-heading {
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .partner-heading {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 30em) {
+  .partner-heading {
+    font-size: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=PartnerStyle.css.map */

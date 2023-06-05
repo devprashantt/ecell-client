@@ -1,0 +1,58 @@
+@use 'viewport';
+
+@include viewport.responsive(viewport.$xl) {
+    .process-img {
+        width: 25rem;
+    }
+}
+
+@include viewport.responsive(viewport.$lg) {
+    .process-component {
+        width: 70%;
+        text-align: center;
+    }
+
+    .process-img {
+        display: none;
+    }
+
+    .process-block-processes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2em;
+        column-gap: 4em;
+        // text-align: center;
+    }
+
+    .process-element-process {
+        flex-direction: column;
+    }
+
+    .process-element-process>span {
+        align-self: center;
+    }
+
+    .process-element-process>div {
+        text-align: left;
+    }
+}
+
+@include viewport.responsive(viewport.$sm-med) {
+    .process-block-processes {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .process-element-process>div {
+        width: 75%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@include viewport.responsive(viewport.$sm) {
+    .process-element-process>div {
+        width: 90%;
+    }
+}

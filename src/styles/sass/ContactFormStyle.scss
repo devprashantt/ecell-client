@@ -1,0 +1,18 @@
+@use 'viewport';
+
+.form--component {
+    max-width: 80%;
+}
+
+@include viewport.responsive(viewport.$med) {
+    .form--component {
+        max-width: 95%;
+    }
+}
+
+@include viewport.responsive(viewport.$sm-med) {
+    .form--component>div {
+        flex-direction: column;
+        max-width: 70%;
+    }
+}

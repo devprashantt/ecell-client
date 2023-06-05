@@ -1,5 +1,9 @@
 import PropTypes from "prop-types";
 
+// import responsive styles
+import './../styles/css/MessageStyle.css';
+
+
 const Message = ({ heading, description }) => {
   return (
     <div
@@ -11,6 +15,7 @@ const Message = ({ heading, description }) => {
         padding: "1.5% 3%",
         backgroundColor: "rgba(196, 196, 196, 0.15)",
       }}
+      className="message--block"
     >
       <h1
         style={{

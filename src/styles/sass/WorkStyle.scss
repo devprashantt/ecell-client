@@ -1,0 +1,17 @@
+@use 'viewport';
+
+@include viewport.responsive(viewport.$med-lg) {
+
+    .work--element-img {
+        width: 15rem;
+        min-height: 0;
+    }
+}
+
+@include viewport.responsive(viewport.$med) {
+
+    .work--block-images {
+        flex-direction: column !important;
+        gap: 2em 0;
+    }
+}

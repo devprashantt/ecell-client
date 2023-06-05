@@ -1,3 +1,6 @@
+// import responsive styles
+import './../styles/css/EventsOrganizedStyle.css';
+
 // events icon from rect-icons
 import {
   RiCalendarCheckLine,
@@ -77,8 +80,9 @@ const EventsOrganized = () => {
 
         padding: "0 3%",
       }}
+      className='eventsOrganized-component'
     >
-      <h1>Events Organized</h1>
+      <h1 >Events Organized</h1>
       <p
         style={{
           textAlign: "center",
@@ -98,6 +102,7 @@ const EventsOrganized = () => {
           gap: "1rem",
           margin: "2rem 0",
         }}
+        className="eventsOrganized-events"
       >
         {events.map((event) => (
           <div
@@ -143,6 +148,7 @@ const EventsOrganized = () => {
                   textAlign: "center",
                   maxWidth: "20rem",
                 }}
+
               >
                 {event.description}
               </p>

@@ -1,0 +1,24 @@
+@use 'viewport';
+
+@include viewport.responsive(viewport.$med) {
+    .navbar-links {
+        display: none;
+    }
+}
+
+@include viewport.responsive(viewport.$sm) {
+    .navbar-link-contact {
+        font-size: 0.9rem;
+    }
+}
+
+.collapse-links--state-collapse {
+    display: none;
+}
+
+.collapse-links--state-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}

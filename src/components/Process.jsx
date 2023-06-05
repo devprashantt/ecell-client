@@ -1,3 +1,6 @@
+// import responsive styles
+import './../styles/css/ProcessStyle.css';
+
 // import icon from react icons
 import { FaRegLightbulb } from "react-icons/fa";
 
@@ -89,8 +92,9 @@ const Process = () => {
         gap: "4rem",
         padding: "0 3%",
       }}
+      className='process-component'
     >
-      <img src={images.process} alt="process" />
+      <img src={images.process} alt="process" className='process-img' />
       <div
         style={{
           display: "flex",
@@ -111,48 +115,51 @@ const Process = () => {
           Tristique est tellus non maecenas in egestas aliquam. Eget dolor
           pellentesque consequat donec lectus nisl ligula. Ut sed nisi amet.
         </p>
-        {process.map((item) => (
-          <div
-            key={item.id}
-            style={{
-              display: "flex",
-              alignItems: "start",
-              gap: "2rem",
-            }}
-          >
-            <span
-              style={{
-                padding: "0.8rem",
-                backgroundColor: item.bgcolor,
-                borderRadius: "20px",
-              }}
-            >
-              {item.icon}
-            </span>
+        <div className="process-block-processes">
+          {process.map((item) => (
             <div
+              key={item.id}
               style={{
                 display: "flex",
-                flexDirection: "column",
+                alignItems: "start",
+                gap: "2rem",
               }}
+              className='process-element-process'
             >
-              <h3
+              <span
                 style={{
-                  fontWeight: "bold",
-                  margin: "0",
+                  padding: "0.8rem",
+                  backgroundColor: item.bgcolor,
+                  borderRadius: "20px",
                 }}
               >
-                {item.title}
-              </h3>
-              <p
+                {item.icon}
+              </span>
+              <div
                 style={{
-                  color: "rgba(0, 0, 0, 0.5)",
+                  display: "flex",
+                  flexDirection: "column",
                 }}
               >
-                {item.description}
-              </p>
+                <h3
+                  style={{
+                    fontWeight: "bold",
+                    margin: "0",
+                  }}
+                >
+                  {item.title}
+                </h3>
+                <p
+                  style={{
+                    color: "rgba(0, 0, 0, 0.5)",
+                  }}
+                >
+                  {item.description}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

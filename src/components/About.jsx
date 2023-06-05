@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 //images import
 import { images } from "./../constants";
 
+// import responsive styles
+import './../styles/css/AboutStyle.css';
+
 const About = () => {
   return (
     <div
@@ -13,6 +16,7 @@ const About = () => {
         gap: "4rem",
         padding: "0 3%",
       }}
+      className="about--component"
     >
       <img src={images.about} alt="about" />
       <div
@@ -53,6 +57,7 @@ const About = () => {
             borderRadius: "20px",
             padding: "10px 15px",
           }}
+          className="about--element-link"
         >
           About us
         </Link>
