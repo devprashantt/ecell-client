@@ -11,6 +11,12 @@
 
     .message--block>h1 {
         font-size: 1.2rem;
+        padding-left: 1rem;
+        min-width: 10rem;
+    }
+
+    .message--block>p {
+        // width: 170%;
     }
 }
 
@@ -19,6 +25,14 @@
     .message--block {
         flex-direction: column;
         padding: 1rem 4rem !important;
+    }
+
+    .message--block>h1 {
+        text-align: center !important;
+    }
+
+    .message--block>p {
+        text-align: center !important;
     }
 
     .message--block>div {

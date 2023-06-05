@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/_viewport.scss","../sass/MessageStyle.scss"],"names":[],"mappings":"AAWI;ECPA;IACI;;;ADMJ;ECAA;IACI;;;ADDJ;ECOA;IACI;IACA;;EAGJ;IACI;IACA","file":"MessageStyle.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/_viewport.scss","../sass/MessageStyle.scss"],"names":[],"mappings":"AAWI;ECPA;IACI;;;ADMJ;ECAA;IACI;IACA;IACA;;;ADHJ;ECaA;IACI;IACA;;EAGJ;IACI;;EAGJ;IACI;;EAGJ;IACI;IACA","file":"MessageStyle.css"}

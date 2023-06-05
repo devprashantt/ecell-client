@@ -6,12 +6,20 @@
 @media (max-width: 576px) {
   .message--block > h1 {
     font-size: 1.2rem;
+    padding-left: 1rem;
+    min-width: 10rem;
   }
 }
 @media (max-width: 30em) {
   .message--block {
     flex-direction: column;
     padding: 1rem 4rem !important;
+  }
+  .message--block > h1 {
+    text-align: center !important;
+  }
+  .message--block > p {
+    text-align: center !important;
   }
   .message--block > div {
     margin: -2em !important;
