@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 //import images from assets
 import { images } from "./../constants";
 
+// import responsive styles
+import './../styles/css/HeaderStyle.css';
+
 const Header = () => {
   return (
     <div
@@ -15,6 +18,8 @@ const Header = () => {
         padding: "0 3%",
         gap: "5rem",
       }}
+
+      className="header"
     >
       {/* left part */}
       <div>
@@ -63,6 +68,7 @@ const Header = () => {
             fontWeight: "bold",
             textAlign: "start",
           }}
+          className="header-title"
         >
           Entrepreneurship Cell <br />
           <span>IIIT Sonepat</span>
@@ -75,6 +81,7 @@ const Header = () => {
 
             color: "rgba(0, 0, 0, 0.5)",
           }}
+          className="header-summary"
         >
           Entrepreneurship Cell of IIIT Sonepat is a student-run organization
           that aims to foster the spirit of entrepreneurship among students and
@@ -122,7 +129,7 @@ const Header = () => {
         </div>
       </div>
       {/* hero img */}
-      <img src={images.message} alt="message" />
+      <img src={images.message} alt="message" className="header-hero-img" />
     </div>
   );
 };

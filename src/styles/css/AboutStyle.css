@@ -1,0 +1,36 @@
+@media (max-width: 60em) {
+  .about--component > img {
+    width: 100%;
+    min-width: 25rem;
+  }
+}
+@media (max-width: 768px) {
+  .about--component > img {
+    width: 100%;
+    min-width: 20rem;
+  }
+}
+@media (max-width: 43em) {
+  .about--component > img {
+    width: 100%;
+    min-width: 15rem;
+  }
+  .about--component h1 {
+    font-size: 1.5rem !important;
+  }
+}
+@media (max-width: 576px) {
+  .about--component {
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+  }
+  .about--component > img {
+    width: 60%;
+  }
+  .about--element-link {
+    align-self: center;
+  }
+}
+
+/*# sourceMappingURL=AboutStyle.css.map */

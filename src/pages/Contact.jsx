@@ -1,6 +1,9 @@
 //import contact from
 import { ContactForm, Work } from "../components";
 
+// import responsive styles
+import './../styles/css/ContactPage.css';
+
 //import contact icons
 import { BiLocationPlus } from "react-icons/bi";
 import { RiGlobalLine } from "react-icons/ri";
@@ -78,6 +81,7 @@ const Contact = () => {
           borderRadius: "2rem",
           width: "100%",
         }}
+        className="contact--block"
       >
         <div
           style={{
@@ -90,6 +94,7 @@ const Contact = () => {
             padding: "4% 4% 6% 4%",
             borderRadius: "2rem",
           }}
+          className="contact--block-info"
         >
           <div
             style={{
@@ -120,48 +125,50 @@ const Contact = () => {
               hours.
             </p>
           </div>
-          {contacts.map((contact, index) => (
-            <div
-              key={index}
-              style={{
-                display: "flex",
-                justifyContent: "start",
-                alignItems: "start",
-                gap: "1rem",
-              }}
-            >
+          <div className="contact--info-details">
+            {contacts.map((contact, index) => (
               <div
+                key={index}
                 style={{
                   display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  backgroundColor: "#fff",
-                  borderRadius: "50%",
-                  width: "50px",
-                  height: "50px",
+                  justifyContent: "start",
+                  alignItems: "start",
+                  gap: "1rem",
                 }}
               >
-                {contact.icon}
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  gap: "0.5rem",
-                }}
-              >
-                <p
+                <div
                   style={{
-                    color: "#fff",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    backgroundColor: "#fff",
+                    borderRadius: "50%",
+                    width: "50px",
+                    height: "50px",
                   }}
                 >
-                  {contact.description}
-                </p>
+                  {contact.icon}
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    gap: "0.5rem",
+                  }}
+                >
+                  <p
+                    style={{
+                      color: "#fff",
+                    }}
+                  >
+                    {contact.description}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
         <ContactForm />
       </div>

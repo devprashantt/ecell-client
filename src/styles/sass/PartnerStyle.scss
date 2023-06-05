@@ -1,0 +1,19 @@
+@use 'viewport';
+
+.partner-heading {
+    text-align: center;
+}
+
+@include viewport.responsive(viewport.$sm-med) {
+
+    .partner-heading {
+        font-size: 1.8rem;
+    }
+}
+
+@include viewport.responsive(viewport.$sm) {
+
+    .partner-heading {
+        font-size: 1.5rem;
+    }
+}

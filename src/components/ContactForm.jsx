@@ -1,5 +1,8 @@
 import { useState } from "react";
 
+// import responsive styles
+import './../styles/css/ContactFormStyle.css';
+
 function ContactForm() {
   const [formData, setFormData] = useState({
     first_name: "",
@@ -69,6 +72,7 @@ function ContactForm() {
         gap: "1rem",
         width: "100%",
       }}
+      className="form--component"
     >
       <div
         style={{

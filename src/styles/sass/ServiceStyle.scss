@@ -1,0 +1,40 @@
+@use 'viewport';
+
+@include viewport.responsive(viewport.$lg) {
+
+    .service--component {
+        text-align: center;
+        width: 80%;
+    }
+
+    .service--component>img {
+        display: none;
+    }
+
+    .service--block-info {
+        align-items: center !important;
+        max-width: 15rem !important;
+    }
+
+    .service--element-link {
+        align-self: center;
+    }
+}
+
+@include viewport.responsive(viewport.$med) {
+
+    .service--block-services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+}
+
+@include viewport.responsive(viewport.$sm) {
+
+    .service--element-heading {
+        font-size: 1.5rem !important;
+    }
+}

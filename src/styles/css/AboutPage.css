@@ -1,0 +1,44 @@
+.job--block {
+  border-radius: 0 !important;
+  padding: 2em;
+}
+
+@media (max-width: 70em) {
+  .job-image {
+    width: 100%;
+    min-width: 35rem;
+  }
+}
+@media (max-width: 60em) {
+  .job-image {
+    min-width: 20rem;
+  }
+}
+@media (max-width: 43em) {
+  .job--block {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .job--block-text {
+    width: 70%;
+  }
+  .job--element-openings {
+    align-self: center;
+  }
+  .job-image {
+    max-width: 30rem;
+  }
+}
+@media (max-width: 30em) {
+  .job--block-text {
+    width: 70%;
+  }
+  .job--block-text > h1 {
+    font-size: 1.5rem;
+  }
+  .job-image {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=AboutPage.css.map */

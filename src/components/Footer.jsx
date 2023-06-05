@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 
+// import responsive styles
+import './../styles/css/FooterStyle.css';
+
 //social icon from react-icons
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
@@ -99,6 +102,7 @@ const Footer = () => {
           justifyContent: "space-between",
           alignItems: "center",
         }}
+        className="footer--block-links"
       >
         {menus.map((menu) => (
           <Link

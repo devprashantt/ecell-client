@@ -1,0 +1,44 @@
+@use 'viewport';
+
+.contact--info-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+@include viewport.responsive(viewport.$lg) {
+    .contact--block {
+        flex-direction: column;
+        gap: 3em !important;
+    }
+
+    .contact--block-info {
+        max-width: 80%;
+        padding: 2rem !important;
+    }
+
+    .contact--info-details {
+        // display: grid;
+        // grid-template-columns: repeat(auto-fill, 2, 1fr);
+        // column-gap: 3em;
+        // row-gap: 2em;
+    }
+}
+
+@include viewport.responsive(viewport.$sm) {
+    .contact--block-info {
+        max-width: 85%;
+        align-items: center;
+        text-align: center;
+        padding: 1rem !important;
+    }
+
+    .contact--block-info>div {
+        text-align: center;
+        margin: auto;
+    }
+
+    .contact--block-info>div>p {
+        margin: auto !important;
+    }
+}

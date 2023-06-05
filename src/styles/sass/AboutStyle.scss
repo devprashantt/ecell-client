@@ -1,0 +1,46 @@
+@use 'viewport';
+
+@include viewport.responsive(viewport.$lg) {
+
+    .about--component>img {
+        width: 100%;
+        min-width: 25rem;
+    }
+}
+
+@include viewport.responsive(viewport.$med-lg) {
+
+    .about--component>img {
+        width: 100%;
+        min-width: 20rem;
+    }
+}
+
+@include viewport.responsive(viewport.$med) {
+
+    .about--component>img {
+        width: 100%;
+        min-width: 15rem;
+    }
+
+    .about--component h1 {
+        font-size: 1.5rem !important;
+    }
+}
+
+@include viewport.responsive(viewport.$sm-med) {
+
+    .about--component {
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+    }
+
+    .about--component>img {
+        width: 60%;
+    }
+
+    .about--element-link {
+        align-self: center;
+    }
+}

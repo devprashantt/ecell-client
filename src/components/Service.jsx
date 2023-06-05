@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 
+// import responsive styles
+import './../styles/css/ServiceStyle.css';
+
 // import entrepreneurship from "react-icons
 import { FaCloud } from "react-icons/fa";
 
@@ -74,6 +77,7 @@ const Service = () => {
         gap: "2rem",
         padding: "0 3%",
       }}
+      className="service--component"
     >
       <div
         style={{
@@ -92,6 +96,7 @@ const Service = () => {
             letterSpacing: "-0.05em",
             margin: "0",
           }}
+          className="service--element-heading"
         >
           Ultimate Services for your businesses.
         </h1>
@@ -111,6 +116,7 @@ const Service = () => {
             flexWrap: "wrap",
             gap: "2.5rem",
           }}
+          className="service--block-services"
         >
           {services.map((service, index) => {
             return (
@@ -125,6 +131,7 @@ const Service = () => {
                   maxWidth: "300px",
                   gap: "20px",
                 }}
+                className="service--block-info"
               >
                 <div
                   style={{
@@ -170,6 +177,7 @@ const Service = () => {
             borderRadius: "0.5rem",
             margin: "1rem 0",
           }}
+          className="service--element-link"
         >
           See all
         </Link>
