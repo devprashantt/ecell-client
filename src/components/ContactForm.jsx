@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // import responsive styles
-import './../styles/css/ContactFormStyle.css';
+import "./../styles/css/ContactFormStyle.css";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -10,7 +10,7 @@ function ContactForm() {
     email: "",
     phone: "",
     city: "",
-    state: "",
+    college: "",
     message: "",
   });
 
@@ -69,7 +69,6 @@ function ContactForm() {
         flexDirection: "column",
         justifyContent: "space-between",
         alignItems: "center",
-        gap: "1rem",
         width: "100%",
       }}
       className="form--component"
@@ -88,7 +87,6 @@ function ContactForm() {
             display: "flex",
             flexDirection: "column",
             width: "100%",
-            gap: "0.8rem",
           }}
         >
           <label htmlFor="firstName">First name:</label>
@@ -107,7 +105,6 @@ function ContactForm() {
             display: "flex",
             flexDirection: "column",
             width: "100%",
-            gap: "0.8rem",
           }}
         >
           <label htmlFor="lastName">Last name:</label>
@@ -137,7 +134,6 @@ function ContactForm() {
             display: "flex",
             flexDirection: "column",
             width: "100%",
-            gap: "0.8rem",
           }}
         >
           <label htmlFor="email">Email:</label>
@@ -156,7 +152,6 @@ function ContactForm() {
             display: "flex",
             flexDirection: "column",
             width: "100%",
-            gap: "0.8rem",
           }}
         >
           <label htmlFor="phone">Phone:</label>
@@ -186,7 +181,6 @@ function ContactForm() {
             display: "flex",
             flexDirection: "column",
             width: "100%",
-            gap: "0.8rem",
           }}
         >
           <label htmlFor="city">City:</label>
@@ -205,16 +199,15 @@ function ContactForm() {
             display: "flex",
             flexDirection: "column",
             width: "100%",
-            gap: "0.8rem",
           }}
         >
-          <label htmlFor="state">State:</label>
+          <label htmlFor="state">College:</label>
           <input
             type="text"
-            id="state"
-            placeholder="Enter your state"
-            name="state"
-            value={formData.state}
+            id="college"
+            placeholder="Enter your college"
+            name="college"
+            value={formData.college}
             onChange={handleChange}
             disabled={isDisabled}
           />
@@ -225,7 +218,6 @@ function ContactForm() {
           display: "flex",
           flexDirection: "column",
           width: "100%",
-          gap: "0.8rem",
         }}
       >
         <label htmlFor="address">Message:</label>

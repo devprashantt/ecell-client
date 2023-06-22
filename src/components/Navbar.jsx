@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 // import responsive styles
-import './../styles/css/NavbarStyle.css';
+import "./../styles/css/NavbarStyle.css";
 
 //hamburger menu from react-icons
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -22,6 +22,10 @@ const Navbar = () => {
       link: "/events",
     },
     {
+      name: "Leaderboard",
+      link: "/leaderboard",
+    },
+    {
       name: "Contact",
       link: "/contact",
     },
@@ -36,7 +40,7 @@ const Navbar = () => {
       setCollapseState(false);
     }
     console.log(collapseState);
-  }
+  };
 
   return (
     <div>
@@ -102,13 +106,14 @@ const Navbar = () => {
           </Link>
           <GiHamburgerMenu size="2rem" onClick={toggleCollapse} />
         </div>
-
-
       </header>
       <div
-
-        className={`${collapseState ? "collapse-links--state-open" : "collapse-links--state-collapse"}`
-        }>
+        className={`${
+          collapseState
+            ? "collapse-links--state-open"
+            : "collapse-links--state-collapse"
+        }`}
+      >
         {menus.map((menu) => (
           <Link
             key={menu.name}

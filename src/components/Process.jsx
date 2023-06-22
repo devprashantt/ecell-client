@@ -1,5 +1,5 @@
 // import responsive styles
-import './../styles/css/ProcessStyle.css';
+import "./../styles/css/ProcessStyle.css";
 
 // import icon from react icons
 import { FaRegLightbulb } from "react-icons/fa";
@@ -82,6 +82,7 @@ const Process = () => {
       bgcolor: "#FFEEA6",
     },
   ];
+
   return (
     <div
       style={{
@@ -92,9 +93,9 @@ const Process = () => {
         gap: "4rem",
         padding: "0 3%",
       }}
-      className='process-component'
+      className="process-component"
     >
-      <img src={images.process} alt="process" className='process-img' />
+      <img src={images.process} alt="process" className="process-img" />
       <div
         style={{
           display: "flex",
@@ -115,7 +116,14 @@ const Process = () => {
           Tristique est tellus non maecenas in egestas aliquam. Eget dolor
           pellentesque consequat donec lectus nisl ligula. Ut sed nisi amet.
         </p>
-        <div className="process-block-processes">
+        <div
+          className="process-block-processes"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "1.5rem",
+          }}
+        >
           {process.map((item) => (
             <div
               key={item.id}
@@ -124,7 +132,7 @@ const Process = () => {
                 alignItems: "start",
                 gap: "2rem",
               }}
-              className='process-element-process'
+              className="process-element-process"
             >
               <span
                 style={{
