@@ -1,0 +1,25 @@
+.events {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+
+    align-items: center;
+
+    .events__heading {
+    }
+
+    .events__container {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .events__create {
+        color: white;
+        background-color: #6874fc;
+        padding: 1rem;
+        border-radius: 10px;
+        margin-top: 1rem;
+    }
+}
