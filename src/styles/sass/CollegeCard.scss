@@ -1,0 +1,63 @@
+@use 'viewport';
+
+
+@include viewport.responsive(600px) {
+
+    .college-card {
+        flex-direction: column;
+        padding: 1rem 1rem !important;
+    }
+
+    .college-card--details>img {
+        width: 4rem !important;
+        height: 4rem !important;
+    }
+
+    .college-card--details>div>h4 {
+        font-size: 1.25rem !important;
+    }
+
+    .college-card--details>div>p {
+        font-size: 0.9rem !important;
+    }
+
+    .college-card--ranking {
+        flex-direction: row !important;
+        gap: 2rem !important;
+        padding: 1rem 0 0.5rem;
+        justify-content: space-around !important;
+        width: auto !important;
+    }
+
+}
+
+@include viewport.responsive(viewport.$sm) {
+
+    .college-card--details {
+        flex-direction: column;
+        padding: 0.5rem 0 0;
+        text-align: center;
+    }
+
+    .college-card--details>img {
+        width: 5rem !important;
+        height: 5rem !important;
+    }
+
+    .college-card--details>div>h4 {
+        font-size: 1.5rem !important;
+    }
+
+    .college-card--details>div>p {
+        font-size: 1rem !important;
+    }
+
+    .college-card--ranking {
+        flex-direction: row !important;
+        gap: 2rem !important;
+        padding: 1rem 0 0.5rem;
+        justify-content: space-around !important;
+        width: auto !important;
+    }
+
+}

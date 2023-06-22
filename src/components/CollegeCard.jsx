@@ -1,5 +1,8 @@
 import PropTypes from "prop-types";
 
+// import responsive styles
+import "./../styles/css/CollegeCard.css";
+
 const CollegeCard = ({ image, name, desc, rank, rating }) => {
   return (
     <div
@@ -14,6 +17,7 @@ const CollegeCard = ({ image, name, desc, rank, rating }) => {
         alignItems: "center",
         justifyContent: "space-between",
       }}
+      className="college-card"
     >
       <div
         style={{
@@ -22,6 +26,8 @@ const CollegeCard = ({ image, name, desc, rank, rating }) => {
           gap: "1.5rem",
           width: "80%",
         }}
+
+        className="college-card--details"
       >
         <img
           src={image}
@@ -69,6 +75,8 @@ const CollegeCard = ({ image, name, desc, rank, rating }) => {
 
           marginLeft: "1rem",
         }}
+
+        className="college-card--ranking"
       >
         <p
           style={{
