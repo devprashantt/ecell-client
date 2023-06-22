@@ -15,6 +15,7 @@
   color: rgb(104, 84, 252);
   flex-direction: column;
   justify-content: center;
+  gap: 0.33rem;
   align-items: flex-end;
   transition: height 0.4s ease-out;
   overflow: hidden;
@@ -30,7 +31,7 @@
 }
 
 .collapse-links--state-open {
-  height: 10rem;
+  height: 15rem;
 }
 
 /*# sourceMappingURL=NavbarStyle.css.map */
