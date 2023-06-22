@@ -108,19 +108,10 @@ const Navbar = () => {
         </div>
       </header>
       <div
-<<<<<<< HEAD
 
         className={`${collapseState ? "collapse-links--state-open" : "collapse-links--state-collapse"}
         collapse-links`
         }>
-=======
-        className={`${
-          collapseState
-            ? "collapse-links--state-open"
-            : "collapse-links--state-collapse"
-        }`}
-      >
->>>>>>> b48a94c97249c02cfcdc6a434160748185f1ca93
         {menus.map((menu) => (
           <Link
             key={menu.name}
