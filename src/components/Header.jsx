@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { images } from "./../constants";
 
 // import responsive styles
-import './../styles/css/HeaderStyle.css';
+import "./../styles/css/HeaderStyle.css";
 
 const Header = () => {
   return (
@@ -18,7 +18,6 @@ const Header = () => {
         padding: "0 3%",
         gap: "5rem",
       }}
-
       className="header"
     >
       {/* left part */}

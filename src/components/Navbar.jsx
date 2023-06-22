@@ -26,6 +26,10 @@ const Navbar = () => {
       link: "/leaderboard",
     },
     {
+      name: "Admin",
+      link: "/admin",
+    },
+    {
       name: "Contact",
       link: "/contact",
     },
@@ -108,10 +112,13 @@ const Navbar = () => {
         </div>
       </header>
       <div
-
-        className={`${collapseState ? "collapse-links--state-open" : "collapse-links--state-collapse"}
-        collapse-links`
-        }>
+        className={`${
+          collapseState
+            ? "collapse-links--state-open"
+            : "collapse-links--state-collapse"
+        }
+        collapse-links`}
+      >
         {menus.map((menu) => (
           <Link
             key={menu.name}

@@ -1,5 +1,5 @@
 // import responsive styles
-import './../styles/css/TeamStyle.css';
+import "./../styles/css/TeamStyle.css";
 
 const Team = () => {
   const team = [
@@ -220,14 +220,15 @@ const Team = () => {
         padding: "0 3%",
         gap: "2rem",
       }}
-      className='team--component'
+      className="team--component"
     >
       <h1
         style={{
           margin: "0",
+          textAlign: "center",
         }}
       >
-        Our Team
+        Introducing the IIIT Sonepat E-Cell Team!
       </h1>
       <p
         style={{
@@ -235,9 +236,11 @@ const Team = () => {
           maxWidth: "800px",
         }}
       >
-        Interdum ac tincidunt molestie facilisis. Nulla at erat odio bibendum
-        diam quam. Scelerisque mus vel egestas justo, purus consequat nibh eget.
-        Non risus feugiat porta integer.
+        Our team at IIIT Sonepat E-Cell is composed of dedicated individuals who
+        are passionate about entrepreneurship and fostering a culture of
+        innovation. Together, we work towards creating a supportive and
+        inspiring environment for students to explore their entrepreneurial
+        potential. Here are some key members of our team:{" "}
       </p>
       <div
         style={{
@@ -248,7 +251,7 @@ const Team = () => {
           flexWrap: "wrap",
           maxWidth: "80%",
         }}
-        className='team--block-members'
+        className="team--block-members"
       >
         {team.map((member, index) => (
           <div
@@ -260,7 +263,7 @@ const Team = () => {
               alignItems: "center",
               gap: "10px",
             }}
-            className='team--block-member-info'
+            className="team--block-member-info"
           >
             <img
               src={member.img}
@@ -269,7 +272,7 @@ const Team = () => {
                 width: "150px",
                 height: " 150px",
                 borderRadius: "50%",
-                backgroundColor: "lightgray"
+                backgroundColor: "lightgray",
               }}
             />
             <h3

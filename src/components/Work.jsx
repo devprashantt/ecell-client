@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 // import responsive styles
-import './../styles/css/WorkStyle.css';
+import "./../styles/css/WorkStyle.css";
 
 //import work img
 import { images } from "../constants";
@@ -43,7 +43,7 @@ const Work = () => {
         padding: "0 3%",
       }}
     >
-      <h1>See Our Work</h1>
+      <h1>Gallery</h1>
       <p
         style={{
           textAlign: "center",
@@ -51,9 +51,11 @@ const Work = () => {
           color: "rgba(0, 0, 0, 0.5)",
         }}
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        voluptatum, quibusdam, quia, quos voluptates voluptatibus quod
-        voluptatem quas doloribus quidem voluptate. Quisquam voluptatum,
+        Our Gallery section aims to provide a glimpse into the dynamic and
+        engaging experiences that take place within our entrepreneurial
+        ecosystem. Enjoy the visual journey through the IIIT Sonepat E-Cell
+        Gallery and let the images inspire and motivate you to embark on your
+        own entrepreneurial path!
       </p>
       <div
         style={{

@@ -1,5 +1,5 @@
 // import responsive styles
-import './../styles/css/PartnerStyle.css';
+import "./../styles/css/PartnerStyle.css";
 
 //import company images
 import { images } from "./../constants";
@@ -76,7 +76,7 @@ const Partner = () => {
         padding: "0 3%",
       }}
     >
-      <h1 className='partner-heading'>Colleges we have partnered with</h1>
+      <h1 className="partner-heading">Organisations we have partnered with</h1>
       <p
         style={{
           textAlign: "center",
