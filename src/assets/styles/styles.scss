@@ -29,11 +29,21 @@ p {
     color: rgba(0, 0, 0, 0.5);
 }
 
-input {
+input,
+textarea {
     height: 50px;
     padding: 0 20px;
     border: 1px solid #6854fc;
     border-radius: 10px;
     outline: none;
     background: none;
+}
+
+textarea {
+    height: 10rem;
+}
+
+label {
+    margin-bottom: 10px;
+    margin-top: 1.5rem;
 }

@@ -11,5 +11,7 @@ import About from "./About";
 import Service from "./Service";
 import Team from "./Team";
 import ContactForm from "./ContactForm";
+import EventCard from "./EventCard";
+import CollegeCard from "./CollegeCard";
 
-export { Navbar, Footer, Layout, Header, EventsOrganized, Partner, Work, Message, Process, About, Service, Team, ContactForm };
+export { Navbar, Footer, Layout, Header, EventsOrganized, Partner, Work, Message, Process, About, Service, CollegeCard, Team, ContactForm, EventCard };
