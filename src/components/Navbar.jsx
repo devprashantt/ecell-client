@@ -107,7 +107,8 @@ const Navbar = () => {
       </header>
       <div
 
-        className={`${collapseState ? "collapse-links--state-open" : "collapse-links--state-collapse"}`
+        className={`${collapseState ? "collapse-links--state-open" : "collapse-links--state-collapse"}
+        collapse-links`
         }>
         {menus.map((menu) => (
           <Link
