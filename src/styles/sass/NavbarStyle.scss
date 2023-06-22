@@ -12,13 +12,29 @@
     }
 }
 
+.collapse-links {
+    background-color: rgb(196 196 196 / 5%);
+    display: flex;
+    font-size: 1.1rem;
+    color: rgb(104, 84, 252);
+    flex-direction: column;
+    justify-content: center;
+    gap: .33rem;
+    align-items: flex-end;
+    transition: height 0.40s ease-out;
+    overflow: hidden;
+
+    padding-right: 1em;
+}
+
+.collapse-links a:hover {
+    color: rgb(104 84 252) !important;
+}
+
 .collapse-links--state-collapse {
-    display: none;
+    height: 0;
 }
 
 .collapse-links--state-open {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    height: 15rem;
 }
