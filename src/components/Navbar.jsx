@@ -26,6 +26,10 @@ const Navbar = () => {
       link: "/leaderboard",
     },
     {
+      name: "Admin",
+      link: "/admin",
+    },
+    {
       name: "Contact",
       link: "/contact",
     },
