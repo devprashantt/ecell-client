@@ -5,7 +5,7 @@ import "./../styles/css/NavbarStyle.css";
 
 //hamburger menu from react-icons
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
   const menus = [
@@ -31,15 +31,54 @@ const Navbar = () => {
     },
   ];
 
-  let [collapseState, setCollapseState] = useState(false);
+  let [collapseOpenState, setCollapseOpenState] = useState(false);
+
+  const collapsableRef = useRef();
+
+  useEffect(() => {
+    const handler = (event) => {
+      if (
+        !collapsableRef.current?.contains(event.target)
+        &&
+
+        /*
+        The below code is for closing the collapse
+        on clicking outside of the collapse
+        but not on the hamburger
+
+        I request you to not change the below code
+        as it is the only one that works without
+        breaking the collapsable UI.
+
+        Don't ask me how but it just works.
+        IT WORKS!!
+        */
+        !event.target.className.includes("hamburger")
+        // !event.target.classList.includes("hamburger")
+      ) {
+        setCollapseOpenState(false);
+        // toggleCollapse();
+        console.log(event.target, "useeffect called");
+      }
+    }
+
+    window.addEventListener('click', handler);
+
+    return () => window.removeEventListener('click', handler);
+  }, [])
+
+  // window.onclick = (event) => {
+  //   if (!event.target.classList.contains('collapseOpen-links')) {
+  //     setCollapseOpenState(false);
+  //   }
+  // }
 
   const toggleCollapse = () => {
-    if (!collapseState) {
-      setCollapseState(true);
+    if (!collapseOpenState) {
+      setCollapseOpenState(true);
     } else {
-      setCollapseState(false);
+      setCollapseOpenState(false);
     }
-    console.log(collapseState);
   };
 
   return (
@@ -104,29 +143,39 @@ const Navbar = () => {
           >
             Connect with us
           </Link>
-          <GiHamburgerMenu size="2rem" onClick={toggleCollapse} />
+          <GiHamburgerMenu size="2rem" onClick={toggleCollapse} className="hamburger" />
+        </div>
+
+
+        <div
+
+          className={`${collapseOpenState ? "collapse-links--state-open" : "collapse-links--state-collapse"}
+        collapse-links`
+          }
+          ref={collapsableRef}>
+          {menus.map((menu) => (
+            <Link
+              key={menu.name}
+              style={{
+                padding: "0.5rem 1rem",
+                fontWeight: "normal",
+                color: "black",
+              }}
+              to={menu.link}
+              onClick={toggleCollapse}
+            >
+              {menu.name}
+            </Link>
+          ))}
+
+
         </div>
       </header>
-      <div
 
-        className={`${collapseState ? "collapse-links--state-open" : "collapse-links--state-collapse"}
-        collapse-links`
-        }>
-        {menus.map((menu) => (
-          <Link
-            key={menu.name}
-            style={{
-              padding: "0.5rem 1rem",
-              fontWeight: "normal",
-              color: "black",
-            }}
-            to={menu.link}
-            onClick={toggleCollapse}
-          >
-            {menu.name}
-          </Link>
-        ))}
-      </div>
+
+      {/* <div
+        className={"collapseOpen-links--component"}></div> */}
+
     </div>
   );
 };
