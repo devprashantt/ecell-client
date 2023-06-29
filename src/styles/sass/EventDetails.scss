@@ -8,8 +8,8 @@
     &__image {
         border-radius: 1rem;
         width: 100%;
-        height: 600px;
-        object-fit: fill;
+        height: 100vh;
+        object-fit: cover;
     }
 
     &__content {

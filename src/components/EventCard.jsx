@@ -1,8 +1,6 @@
 import PropTypes from "prop-types";
-
 import "../styles/sass/EventCard.scss";
 
-//formatting date function
 const formatDate = (date) => {
   const dateObj = new Date(date);
   const month = dateObj.toLocaleString("default", { month: "long" });
@@ -11,44 +9,47 @@ const formatDate = (date) => {
   return `${month} ${day}, ${year}`;
 };
 
-//description length
 function truncateStringToWords(str, numWords) {
-  // Split the string into an array of words
   const words = str.split(" ");
-
-  // Get the desired number of words
   const truncatedWords = words.slice(0, numWords);
-
-  // Join the words back into a string
   const truncatedString = truncatedWords.join(" ");
-
-  // Return the truncated string
   return truncatedString;
 }
 
 const EventCard = ({ title, img, description, date, registrationLink }) => {
+  const currentDate = new Date();
+  const eventDate = new Date(date);
   const dateFormatted = formatDate(date);
   const truncatedString = truncateStringToWords(description, 25);
+
+  let linkComponent;
+  if (eventDate < currentDate) {
+    linkComponent = <p>Ended</p>;
+  } else {
+    linkComponent = (
+      <a
+        href={registrationLink}
+        style={{
+          textDecoration: "none",
+          color: "#6874fc",
+        }}
+      >
+        Register
+      </a>
+    );
+  }
+
   return (
     <div className="event">
       <div className="event__img">
-        <img src={img} />
+        <img src={img} alt={title} />
       </div>
       <div className="event__content">
         <h4 className="event__title">{title}</h4>
         <p>{truncatedString}...</p>
         <div className="event__more">
           <p>{dateFormatted}</p>
-          <a
-            href={{ registrationLink }}
-            style={{
-              textDecoration: "none",
-              color: "#6874fc",
-            }}
-          >
-            {" "}
-            Register
-          </a>
+          {linkComponent}
         </div>
       </div>
     </div>

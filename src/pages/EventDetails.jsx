@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./../styles/sass/EventDetails.scss";
-import { images } from "../constants";
 
 const EventDetails = () => {
   const { id } = useParams();
@@ -33,12 +32,12 @@ const EventDetails = () => {
     );
   }
 
-  const { title, description, date, registrationLink, attendees } = event;
+  const { title, description, date, registrationLink, image } = event;
 
   return (
     <div className="event-details">
+      <img src={image} alt="" className="event-details__image" />
       <h1 className="event-details__title">{title}</h1>
-      <img src={images.auditorium} alt="" className="event-details__image" />
       <div className="event-details__content">
         <h2 className="event-details__content__title">Event Details</h2>
         <p className="event-details__content__description">{description}</p>
@@ -50,31 +49,6 @@ const EventDetails = () => {
             Register Now
           </a>
         </p>
-
-        <div className="event-details__section">
-          <h2 className="event-details__section-title">Event Attendees</h2>
-          {attendees.length > 0 ? (
-            <ul className="event-details__attendees-list">
-              {attendees.map((attendee) => (
-                <li key={attendee._id} className="event-details__attendee">
-                  <img
-                    className="event-details__attendee-image"
-                    src={attendee.image}
-                    alt={attendee.name}
-                  />
-                  <p className="event-details__attendee-name">
-                    {attendee.name}
-                  </p>
-                  <p className="event-details__attendee-description">
-                    {attendee.description}
-                  </p>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p>No attendees yet.</p>
-          )}
-        </div>
       </div>
     </div>
   );
