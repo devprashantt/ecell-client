@@ -1,25 +1,31 @@
 import message from './../assets/message.svg';
 
-import company1 from './../assets/company/Company1.svg';
-import company2 from './../assets/company/Company2.svg';
-import company3 from './../assets/company/Company3.svg';
-import company4 from './../assets/company/Company4.svg';
-import company5 from './../assets/company/Company5.svg';
-import company6 from './../assets/company/Company6.svg';
-import company7 from './../assets/company/Company7.svg';
-import company8 from './../assets/company/Company8.svg';
-import company9 from './../assets/company/Company9.svg';
-import company10 from './../assets/company/Company10.svg';
-import company11 from './../assets/company/Company11.svg';
+import company1 from './../assets/company/Picture1.jpg';
+import company2 from './../assets/company/Picture2.jpg';
+import company3 from './../assets/company/Picture3.jpg';
+import company4 from './../assets/company/Picture4.png';
+import company5 from './../assets/company/Picture5.jpg';
+import company6 from './../assets/company/Picture6.jpg';
+import company7 from './../assets/company/Picture7.jpg';
+import company8 from './../assets/company/Picture8.jpg';
+import company9 from './../assets/company/Picture9.jpg';
+import company10 from './../assets/company/Picture10.jpg';
+import company11 from './../assets/company/Picture11.jpg';
+import company12 from './../assets/company/Picture12.jpg';
+import company13 from './../assets/company/Picture13.jpg';
+import company14 from './../assets/company/Picture14.png';
+import company15 from './../assets/company/Picture15.jpg';
+import company16 from './../assets/company/Picture16.png';
 
-import work1 from './../assets/work/work1.svg';
-import work2 from './../assets/work/work2.svg';
-import work3 from './../assets/work/work3.svg';
+import work1 from './../assets/work/work1.jpg';
+import work2 from './../assets/work/work2.jpg';
+import work3 from './../assets/work/work3.jpg';
 
 import process from './../assets/process.svg';
 import about from './../assets/about.svg';
 import job from './../assets/job.svg';
 import auditorium from './../assets/auditorium.jpg';
+import admin_page from './../assets/admin-page.jpg';
 
 export default {
     message,
@@ -34,11 +40,17 @@ export default {
     company9,
     company10,
     company11,
+    company12,
+    company13,
+    company14,
+    company15,
+    company16,
     work1,
     work2,
     work3,
     process,
     about,
     job,
-    auditorium
+    auditorium,
+    admin_page
 };

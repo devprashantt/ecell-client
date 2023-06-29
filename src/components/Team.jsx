@@ -249,13 +249,13 @@ const Team = () => {
           alignItems: "center",
           gap: "4rem",
           flexWrap: "wrap",
-          maxWidth: "80%",
+          maxWidth: "100%",
         }}
         className="team--block-members"
       >
-        {team.map((member, index) => (
+        {team.map((member) => (
           <div
-            key={index}
+            key={member.name}
             style={{
               display: "flex",
               flexDirection: "column",

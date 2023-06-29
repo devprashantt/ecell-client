@@ -14,12 +14,12 @@ const Contact = () => {
     {
       icon: <BiLocationPlus />,
       title: "Address",
-      description: "IIIT Sonepat Transit Campus, SBIT, Pallri, Sonepat",
+      description: "SBIT Campus, Pallri, Sonepat",
     },
     {
       icon: <RiGlobalLine />,
       title: "Website",
-      description: "www.yourwebsite.com",
+      description: "ecelliiitsonepat.com",
     },
     {
       icon: <HiOutlineMail />,
@@ -29,7 +29,7 @@ const Contact = () => {
     {
       icon: <HiOutlineMail />,
       title: "Email",
-      description: "ecelliiitsonepat@gmail.com",
+      description: "ecelliiits@gmail.com",
     },
   ];
   return (
@@ -66,8 +66,9 @@ const Contact = () => {
             margin: "0",
           }}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          quos.
+          We would love to hear from you! If you have any questions,
+          suggestions, or feedback, please feel free to reach out to us using
+          the contact information below.
         </p>
       </div>
       <div
@@ -132,7 +133,7 @@ const Contact = () => {
                 style={{
                   display: "flex",
                   justifyContent: "start",
-                  alignItems: "start",
+                  alignItems: "center",
                   gap: "1rem",
                 }}
               >
@@ -149,23 +150,14 @@ const Contact = () => {
                 >
                   {contact.icon}
                 </div>
-                <div
+                <p
                   style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    gap: "0.5rem",
+                    margin: "0",
+                    color: "#fff",
                   }}
                 >
-                  <p
-                    style={{
-                      color: "#fff",
-                    }}
-                  >
-                    {contact.description}
-                  </p>
-                </div>
+                  {contact.description}
+                </p>
               </div>
             ))}
           </div>

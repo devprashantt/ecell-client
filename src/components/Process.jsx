@@ -11,9 +11,9 @@ const Process = () => {
   const process = [
     {
       id: 1,
-      title: "Tell us what you need",
+      title: "Ideation and Validation",
       description:
-        "Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed velit morbi diam. Amet malesuada eget aliquam imperdiet. Arcu dolor sed pretiu",
+        "We encourage our members to explore their ideas and think critically about their viability. We provide workshops, brainstorming sessions, and mentorship to help refine ideas, assess market potential, and validate concepts. Our goal is to assist aspiring entrepreneurs in identifying innovative and sustainable business ideas.",
       icon: (
         <FaRegLightbulb
           icon
@@ -29,9 +29,9 @@ const Process = () => {
     },
     {
       id: 2,
-      title: "We'll review your request",
+      title: "Education and Skill Development",
       description:
-        "Tellus, lacus, sem adipiscing ac sem amet. Vitae proin volutpat cras tempus vitae. Ipsum consectetur quis diam hendrerit pharetra amet scelerisque. Elementum risus aliquam quam etiam. Eget eu risus dui lacus, orci. Cras ultricies posuere adipiscing faucibu.",
+        "Entrepreneurship requires a diverse skill set. We offer a variety of educational programs, including workshops, seminars, and guest lectures, to equip our members with the knowledge and skills needed to excel in the entrepreneurial landscape. Topics covered may include business planning, market research, financial management, marketing strategies, and pitching skills.",
       icon: (
         <FaRegLightbulb
           icon
@@ -47,9 +47,9 @@ const Process = () => {
     },
     {
       id: 3,
-      title: "Connect with the right pros",
+      title: "Mentorship and Guidance",
       description:
-        "Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed velit morbi diam. Amet malesuada eget aliquam imperdiet. Arcu dolor sed pretiu",
+        "We believe in the power of mentorship. Our experienced mentors, consisting of successful entrepreneurs and industry professionals, provide one-on-one guidance, feedback, and support to our members. They share their expertise, offer valuable insights, and help navigate the challenges and complexities of entrepreneurship.",
       icon: (
         <FaRegLightbulb
           icon
@@ -65,9 +65,9 @@ const Process = () => {
     },
     {
       id: 4,
-      title: "Get the job done",
+      title: "Networking and Collaboration",
       description:
-        "Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed velit morbi diam. Amet malesuada eget aliquam imperdiet. Arcu dolor sed pretiu",
+        "We understand the importance of building a strong network in the entrepreneurial ecosystem. We organize networking events, meetups, and conferences where our members can connect with like-minded individuals, potential co-founders, investors, and industry experts. These interactions foster collaboration, partnership opportunities, and knowledge sharing.",
       icon: (
         <FaRegLightbulb
           icon
@@ -112,9 +112,9 @@ const Process = () => {
           Our Process
         </h1>
         <p>
-          Sit arcu, egestas nunc, eros dignissim nunc, pretium malesuada.
-          Tristique est tellus non maecenas in egestas aliquam. Eget dolor
-          pellentesque consequat donec lectus nisl ligula. Ut sed nisi amet.
+          We believe that a structured and well-defined approach, combined with
+          the right resources and support, can significantly enhance the chances
+          of entrepreneurial success. Here an overview of our processes:
         </p>
         <div
           className="process-block-processes"

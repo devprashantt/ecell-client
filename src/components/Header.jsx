@@ -103,7 +103,7 @@ const Header = () => {
               border: "none",
               borderRadius: "1rem",
 
-              padding: "0.5rem 1rem",
+              padding: "1rem 1rem",
 
               fontSize: "1.2rem",
               color: "#fff",

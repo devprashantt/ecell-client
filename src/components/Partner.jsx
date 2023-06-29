@@ -64,6 +64,31 @@ const Partner = () => {
 
       link: "https://www.google.com",
     },
+    {
+      name: "Company 12",
+      logo: images.company12,
+      link: "https://www.google.com",
+    },
+    {
+      name: "Company 13",
+      logo: images.company13,
+      link: "https://www.google.com",
+    },
+    {
+      name: "Company 14",
+      logo: images.company14,
+      link: "https://www.google.com",
+    },
+    {
+      name: "Company 15",
+      logo: images.company15,
+      link: "https://www.google.com",
+    },
+    {
+      name: "Company 16",
+      logo: images.company16,
+      link: "https://www.google.com",
+    },
   ];
   return (
     <div
@@ -84,9 +109,10 @@ const Partner = () => {
           color: "rgba(0, 0, 0, 0.5)",
         }}
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        voluptatum, quibusdam, quia, quos voluptates voluptatibus quod
-        voluptatem quas doloribus quidem voluptate. Quisquam voluptatum,
+        Our partnerships with industry leaders, innovative startups, and
+        visionary entrepreneurs allow us to create a dynamic ecosystem where
+        ideas thrive and possibilities are limitless. Together, we push
+        boundaries, challenge norms, and drive innovation to new heights{" "}
       </p>
       <div
         style={{
@@ -112,7 +138,16 @@ const Partner = () => {
               cursor: "pointer",
             }}
           >
-            <img src={company.logo} alt={company.name} />
+            <img
+              src={company.logo}
+              alt={company.name}
+              style={{
+                height: "6rem",
+                width: "6rem",
+                objectFit: "contain",
+                background: "transparent",
+              }}
+            />
           </a>
         ))}
       </div>

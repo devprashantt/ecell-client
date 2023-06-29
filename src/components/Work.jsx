@@ -77,6 +77,7 @@ const Work = () => {
               style={{
                 maxWidth: "20rem",
                 minHeight: "20rem",
+                borderRadius: "1rem",
               }}
               className="work--element-img"
             />
@@ -84,7 +85,7 @@ const Work = () => {
         ))}
       </div>
       <Link
-        to={"/work"}
+        to={"/events"}
         style={{
           textDecoration: "none",
           color: "white",
@@ -93,7 +94,7 @@ const Work = () => {
           borderRadius: "2rem",
         }}
       >
-        See all works
+        See all events
       </Link>
     </div>
   );

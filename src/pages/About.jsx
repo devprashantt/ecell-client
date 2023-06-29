@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 //import components
 import { Message, Team } from "./../components";
@@ -7,7 +7,7 @@ import { Message, Team } from "./../components";
 import "./../styles/css/AboutPage.css";
 
 //import images
-import { images } from "./../constants";
+// import { images } from "./../constants";
 
 const About = () => {
   return (
@@ -40,7 +40,7 @@ const About = () => {
           style={{
             margin: "0",
             padding: "0 2em",
-            textAlign: "justify",
+            textAlign: "center",
           }}
         >
           At the IIIT Sonepat E-Cell, we believe in fostering entrepreneurship
@@ -59,11 +59,11 @@ const About = () => {
       <Message
         heading={"You guessed it. We’re changing the game."}
         description={
-          "Semper bibendum nisl, fermentum mi convallis. Sed vitae tincidunt nunc, aliquam orci. Porttitor faucibus morbi sed senectus justo, adipiscing augue. Est, in in pretium at libero morbi. Euismod viverra arcu nisi eu sit.Praesent diam non imperdiet imperdiet potenti tristique et. Amet nec."
+          "Our mission is to provide a platform for students to explore, learn, and excel in the world of entrepreneurship. We aim to inspire, educate, and support individuals in their entrepreneurial journey, equipping them with the necessary skills, knowledge, and resources to thrive in a competitive business landscape."
         }
       />
       <Team />
-      <div
+      {/* <div
         style={{
           display: "flex",
           justifyContent: "center",
@@ -112,7 +112,7 @@ const About = () => {
           </Link>
         </div>
         <img src={images.job} alt="job" className="job-image" />
-      </div>
+      </div> */}
       <p>Blogs(Coming soon)</p>
     </div>
   );

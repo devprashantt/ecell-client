@@ -7,7 +7,7 @@ import {
   Message,
   Process,
   About,
-  Service,
+  // Service,
 } from "../components";
 
 const Home = () => {
@@ -40,15 +40,15 @@ const Home = () => {
       />
       <About />
       {/* divider */}
-      <hr
+      {/* <hr
         style={{
           width: "100%",
           height: "4px",
           backgroundColor: "#E8E8E8",
         }}
-      />
+      /> */}
       {/* services by us */}
-      <Service />
+      {/* <Service /> */}
     </div>
   );
 };

@@ -1,12 +1,23 @@
 import { Link } from "react-router-dom";
 
 const paraStyle = {
-  fontWeight: "bold",
+  fontWeight: "medium",
   color: "white",
   backgroundColor: "#6874fc",
   padding: "1rem",
-  borderRadius: "1rem",
+  borderRadius: "0.5rem",
   cursor: "pointer",
+};
+
+const textStyle = {
+  fontWeight: "bold",
+  fontSize: "2rem",
+  marginBottom: "1rem",
+  alignItems: "center",
+  justifyContent: "center",
+  display: "flex",
+  flexDirection: "column",
+  textStyle: "center",
 };
 
 const Admin = () => {
@@ -16,18 +27,42 @@ const Admin = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "center",
-        height: "100vh",
+        justifyContent: "start",
+        padding: "2%",
       }}
     >
-      <h1>Admin Page</h1>
+      <div className="admin-page">
+        <h2 className="admin-page__heading" style={textStyle}>
+          Admin Page
+        </h2>
+
+        <p
+          className="admin-page__desc"
+          style={{
+            textAlign: "center",
+          }}
+        >
+          Welcome to the Admin Page, where you have full control and access to
+          manage and oversee various aspects of the platform. As an admin, you
+          play a crucial role in ensuring the smooth operation and success of
+          the system.
+        </p>
+
+        <p className="admin-page__content">
+          The Admin Page provides you with a comprehensive dashboard and
+          intuitive tools to efficiently perform your administrative tasks. It
+          empowers you to make informed decisions, enforce policies, and ensure
+          the platform operates in compliance with your organization guidelines
+          and standards.
+        </p>
+      </div>
       <div>
         <div
           style={{
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            flexDirection: "column",
+            gap: "2rem",
           }}
         >
           <Link to="/admin/create-event">
