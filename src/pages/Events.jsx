@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import { EventCard } from "../components";
 import "../styles/sass/Events.scss";
-import { images } from "../constants";
 
 const Events = () => {
   const [events, setEvents] = useState([]);
@@ -45,7 +44,7 @@ const Events = () => {
             <Link to={`/events/${event._id}`} key={event._id}>
               <EventCard
                 key={event._id}
-                img={images.auditorium}
+                img={event.image}
                 title={event.title}
                 description={event.description}
                 date={event.date}
