@@ -2,7 +2,7 @@
 import { ContactForm, Work } from "../components";
 
 // import responsive styles
-import './../styles/css/ContactPage.css';
+import "./../styles/css/ContactPage.css";
 
 //import contact icons
 import { BiLocationPlus } from "react-icons/bi";
@@ -14,7 +14,7 @@ const Contact = () => {
     {
       icon: <BiLocationPlus />,
       title: "Address",
-      description: "1234 Street Name, City, England",
+      description: "IIIT Sonepat Transit Campus, SBIT, Pallri, Sonepat",
     },
     {
       icon: <RiGlobalLine />,
