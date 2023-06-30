@@ -1,5 +1,5 @@
 //import contact from
-import { ContactForm, Work } from "../components";
+import { ContactForm, LinkedInBadge } from "../components";
 
 // import responsive styles
 import "./../styles/css/ContactPage.css";
@@ -10,6 +10,25 @@ import { RiGlobalLine } from "react-icons/ri";
 import { HiOutlineMail } from "react-icons/hi";
 
 const Contact = () => {
+  const linkedinUser = [
+    {
+      link: "https://www.linkedin.com/in/devprashantt/",
+      name: "Prashant Kumar Singh",
+      headline:
+        "Product Design Intern | Skilled in MERN Stack, Flutter, Python | Technical Blogger on Medium",
+      location: "New Delhi, India",
+      profileImage: "https://avatars.githubusercontent.com/u/96608616?v=4",
+    },
+    {
+      link: "https://www.linkedin.com/in/aditya-r-1a607a114/",
+      name: "Aditya Rawat",
+      headline:
+        "President @ E-Cell, SpeakLoud | Google DSC Core | IIIT Sonepat | Ex-Intern at IBM",
+      location: "New Delhi, India",
+      profileImage:
+        "https://media.licdn.com/dms/image/D4D03AQH8rC8fU6w1cg/profile-displayphoto-shrink_400_400/0/1680752943485?e=1693440000&v=beta&t=9reUN2dt-g95CGwqYMOjjI70FDMbafF0dsjYL-i4Blw",
+    },
+  ];
   const contacts = [
     {
       icon: <BiLocationPlus />,
@@ -40,7 +59,7 @@ const Contact = () => {
         justifyContent: "center",
         alignItems: "center",
         padding: "1.5% 3%",
-        gap: "2rem",
+        gap: "2.5rem",
       }}
     >
       <div
@@ -49,13 +68,22 @@ const Contact = () => {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          gap: "1rem",
+          gap: "1.5rem",
         }}
       >
+        {/* <img
+          src={images.logo}
+          alt="logo"
+          style={{
+            width: "6rem",
+            height: "6rem",
+            marginTop: "1rem",
+          }}
+        /> */}
         <h1
           style={{
             textAlign: "center",
-            margin: "0",
+            margin: "0.5rem",
           }}
         >
           Contact
@@ -79,7 +107,7 @@ const Contact = () => {
           padding: "2%",
           gap: "4%",
           backgroundColor: "white",
-          borderRadius: "2rem",
+          borderRadius: "1.5rem",
           width: "100%",
         }}
         className="contact--block"
@@ -164,7 +192,54 @@ const Contact = () => {
         </div>
         <ContactForm />
       </div>
-      <Work />
+      {/* <Work /> */}
+      <div
+        style={{
+          display: "flex",
+          width: "80%",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: "1rem",
+        }}
+      >
+        <h1
+          style={{
+            margin: "0",
+          }}
+        >
+          Reach us
+        </h1>
+        <p
+          style={{
+            textAlign: "center",
+          }}
+        >
+          We are a team of passionate individuals who are working hard to
+          provide the best platform for the students to learn and grow. We are
+          always open to new ideas and suggestions. If you have any queries,
+          feel free to reach out to us.
+        </p>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+            gap: "2rem",
+            width: "100%",
+          }}
+        >
+          {linkedinUser.map((user, index) => (
+            <LinkedInBadge
+              key={index}
+              link={user.link}
+              name={user.name}
+              headline={user.headline}
+              location={user.location}
+              profileImage={user.profileImage}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
