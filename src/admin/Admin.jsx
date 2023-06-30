@@ -47,14 +47,6 @@ const Admin = () => {
           play a crucial role in ensuring the smooth operation and success of
           the system.
         </p>
-
-        <p className="admin-page__content">
-          The Admin Page provides you with a comprehensive dashboard and
-          intuitive tools to efficiently perform your administrative tasks. It
-          empowers you to make informed decisions, enforce policies, and ensure
-          the platform operates in compliance with your organization guidelines
-          and standards.
-        </p>
       </div>
       <div>
         <div
