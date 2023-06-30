@@ -36,7 +36,7 @@ const Home = () => {
       {/* message */}
       <Message
         heading="We’re a lean creative agency that uses design and code to solve problems."
-        description="Our team of talented designers and skilled developers are passionate about pushing boundaries and creating exceptional digital experiences. We believe that design and code go hand in hand, and by combining these two disciplines, we can deliver impactful solutions that not only look great but also function seamlessly."
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum, quibusdam, quia, quos voluptates voluptatibus quod voluptatem quas doloribus quidem voluptate. Quisquam voluptatum,"
       />
       <About />
       {/* divider */}

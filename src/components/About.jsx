@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { images } from "./../constants";
 
 // import responsive styles
-import "./../styles/css/AboutStyle.css";
+import './../styles/css/AboutStyle.css';
 
 const About = () => {
   return (
@@ -43,9 +43,9 @@ const About = () => {
             color: "rgba(0, 0, 0, 0.5)",
           }}
         >
-          Experience the magic of our creative team and let us bring your vision
-          to life with unmatched creativity, technical expertise, and a passion
-          for delivering remarkable results.{" "}
+          Sit arcu, egestas nunc, eros dignissim nunc, pretium malesuada.
+          Tristique est tellus non maecenas in egestas aliquam. Eget dolor
+          pellentesque consequat donec lectus nisl ligula. Ut sed nisi amet.
         </p>
         <Link
           to={"/about"}

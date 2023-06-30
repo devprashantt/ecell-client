@@ -1,34 +1,19 @@
-import { useContext, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import {
   Home,
   About,
   Contact,
   Events,
+  CreateEvent,
   Leaderboard,
   NotFound,
   EventDetails,
   College,
 } from "./pages";
 
-import {
-  Admin,
-  AdminLogin,
-  CreateEvent,
-  EditEvent,
-  PointsDistribution,
-} from "./admin";
-
 import { Layout } from "./components";
-import { AuthContext } from "./context/AuthContext";
 
 const App = () => {
-  const { isLoggedIn } = useContext(AuthContext);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <Layout>
       <Routes>
@@ -37,23 +22,10 @@ const App = () => {
 
         <Route path="/events" element={<Events />} />
         <Route path="/events/:id" element={<EventDetails />} />
+        <Route path="/create-event" element={<CreateEvent />} />
 
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/college/:collegeId" element={<College />} />
-
-        {isLoggedIn ? (
-          <>
-            <Route path="/admin" element={<Admin />} />
-            <Route path="/admin/create-event" element={<CreateEvent />} />
-            <Route
-              path="/admin/points-distribution"
-              element={<PointsDistribution />}
-            />
-            <Route path="/admin/edit-event/:id" element={<EditEvent />} />
-          </>
-        ) : (
-          <Route path="/admin" element={<AdminLogin />} />
-        )}
 
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />

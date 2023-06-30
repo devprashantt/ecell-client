@@ -1,14 +1,25 @@
 .events {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 1rem;
-    padding: 2rem;
+    width: 100%;
+
+    align-items: center;
+
+    .events__heading {
+    }
 
     .events__container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        grid-gap: 2rem;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .events__create {
+        color: white;
+        background-color: #6874fc;
+        padding: 1rem;
+        border-radius: 10px;
+        margin-top: 1rem;
     }
 }
