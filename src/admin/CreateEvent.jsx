@@ -125,13 +125,34 @@ const CreateEvent = () => {
           onChange={handleChange}
         />
 
-        <label htmlFor="image">Banner:</label>
-        <input
-          type="file"
-          name="image"
-          id="image"
-          onChange={handleImageChange}
-        />
+        <div
+          style={{
+            display: "flex",
+            alignContent: "center",
+            alignItems: "center",
+            margin: "2rem 0 0 0",
+          }}
+        >
+          <label
+            htmlFor="image"
+            style={{
+              margin: "0",
+            }}
+          >
+            Banner:
+          </label>
+          <input
+            type="file"
+            name="image"
+            id="image"
+            onChange={handleImageChange}
+            style={{
+              border: "none",
+              height: "100%",
+              margin: "0",
+            }}
+          />
+        </div>
 
         {/* Show image preview */}
         {formData.croppedImage && (
@@ -145,38 +166,10 @@ const CreateEvent = () => {
           </div>
         )}
 
-        <h2
-          style={{
-            margin: "1.5rem 0 0 0",
-            alignItems: "center",
-            textAlign: "center",
-          }}
-        >
-          Credentials
-        </h2>
-
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-        />
-
-        <label htmlFor="passcode">Passcode:</label>
-        <input
-          type="password"
-          id="passcode"
-          name="passcode"
-          value={formData.passcode}
-          onChange={handleChange}
-        />
-
         <button
           type="submit"
           style={{
-            marginTop: "2rem",
+            marginTop: "1rem",
             backgroundColor: "#6854fc",
             border: "none",
             borderRadius: "1rem",

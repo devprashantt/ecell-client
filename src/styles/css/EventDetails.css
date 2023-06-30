@@ -1,0 +1,61 @@
+.event-details {
+  padding: 2% 5%;
+}
+.event-details__title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.event-details__image {
+  border-radius: 1rem;
+  width: 100%;
+  height: 400px;
+  object-fit: fill;
+}
+.event-details__content {
+  margin-top: 20px;
+}
+.event-details__content__title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.event-details__content__description {
+  font-size: 16px;
+}
+.event-details__content__registration-link a {
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.event-details__content__date, .event-details__content__time, .event-details__content__venue {
+  font-size: 14px;
+}
+.event-details__content__image-caption {
+  font-size: 12px;
+  color: #888;
+}
+.event-details__content__register-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.event-details__content__register-button:hover {
+  background-color: #0056b3;
+}
+.event-details__content__speaker-name, .event-details__content__sponsor-name, .event-details__content__organizer-name, .event-details__content__attendee-name, .event-details__content__comment-name, .event-details__content__like-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.event-details__content__speaker-description, .event-details__content__sponsor-description, .event-details__content__organizer-description, .event-details__content__attendee-description, .event-details__content__comment-description, .event-details__content__like-description {
+  font-size: 14px;
+}
+.event-details__content__speaker-image-caption, .event-details__content__sponsor-image-caption, .event-details__content__organizer-image-caption, .event-details__content__attendee-image-caption, .event-details__content__comment-image-caption, .event-details__content__like-image-caption {
+  font-size: 12px;
+  color: #888;
+}
+
+/*# sourceMappingURL=EventDetails.css.map */
