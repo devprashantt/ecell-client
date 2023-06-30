@@ -26,6 +26,7 @@ import about from './../assets/about.svg';
 import job from './../assets/job.svg';
 import auditorium from './../assets/auditorium.jpg';
 import admin_page from './../assets/admin-page.jpg';
+import logo from './../assets/E-Cell.svg';
 
 export default {
     message,
@@ -52,5 +53,6 @@ export default {
     about,
     job,
     auditorium,
-    admin_page
+    admin_page,
+    logo
 };

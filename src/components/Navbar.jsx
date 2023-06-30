@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import { useState, useEffect, useRef } from "react";
 
 // import responsive styles
-import "./../styles/css/NavbarStyle.css";
+import "./../styles/sass/Navbar.scss";
 
 //hamburger menu from react-icons
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useEffect, useRef, useState } from "react";
+import { images } from "../constants";
 
 const Navbar = () => {
   const menus = [
@@ -22,10 +23,6 @@ const Navbar = () => {
       link: "/events",
     },
     {
-      name: "Leaderboard",
-      link: "/leaderboard",
-    },
-    {
       name: "Admin",
       link: "/admin",
     },
@@ -35,55 +32,26 @@ const Navbar = () => {
     },
   ];
 
-  let [collapseOpenState, setCollapseOpenState] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef1 = useRef(null);
 
-  const collapsableRef = useRef();
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
 
-  useEffect(() => {
-    const handler = (event) => {
-      if (
-        !collapsableRef.current?.contains(event.target)
-        &&
-
-        /*
-        The below code is for closing the collapse
-        on clicking outside of the collapse
-        but not on the hamburger
-
-        I request you to not change the below code
-        as it is the only one that works without
-        breaking the collapsable UI.
-
-        Don't ask me how but it just works.
-        IT WORKS!!
-        */
-        !event.target.className.includes("hamburger")
-        // !event.target.classList.includes("hamburger")
-      ) {
-        setCollapseOpenState(false);
-        // toggleCollapse();
-        console.log(event.target, "useeffect called");
-      }
-    }
-
-    window.addEventListener('click', handler);
-
-    return () => window.removeEventListener('click', handler);
-  }, [])
-
-  // window.onclick = (event) => {
-  //   if (!event.target.classList.contains('collapseOpen-links')) {
-  //     setCollapseOpenState(false);
-  //   }
-  // }
-
-  const toggleCollapse = () => {
-    if (!collapseOpenState) {
-      setCollapseOpenState(true);
-    } else {
-      setCollapseOpenState(false);
+  const handleClickOutside = (event) => {
+    if (dropdownRef1.current && !dropdownRef1.current.contains(event.target)) {
+      setIsDropdownOpen(false);
     }
   };
+
+  useEffect(() => {
+    window.addEventListener("click", handleClickOutside);
+
+    return () => {
+      window.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div>
@@ -97,17 +65,36 @@ const Navbar = () => {
         }}
       >
         {/* left part */}
-        <a
-          href="/"
+        <div
           style={{
-            textDecoration: "none",
-            fontWeight: "bold",
-            color: "black",
-            fontSize: "1.5rem",
+            display: "flex",
+            justifyContent: "start",
+            alignItems: "center",
+            gap: "1rem",
           }}
         >
-          E Cell <span>IIIT Sonepat</span>
-        </a>
+          <img
+            src={images.logo}
+            alt="logo"
+            style={{
+              width: "2.5rem",
+              height: "2.5rem",
+              marginBottom: "0.5rem",
+              objectFit: "contain",
+            }}
+          />
+          <a
+            href="/"
+            style={{
+              textDecoration: "none",
+              fontWeight: "bold",
+              color: "black",
+              fontSize: "1.5rem",
+            }}
+          >
+            E Cell <span>IIIT Sonepat</span>
+          </a>
+        </div>
         {/* middle part */}
         <div className="navbar-links">
           {menus.map((menu) => (
@@ -115,7 +102,8 @@ const Navbar = () => {
               key={menu.name}
               style={{
                 padding: "0.5rem 1rem",
-                fontWeight: "normal",
+                fontWeight: "medium",
+                fontSize: "1.2rem",
                 color: "black",
               }}
               to={menu.link}
@@ -125,61 +113,51 @@ const Navbar = () => {
           ))}
         </div>
         {/* right part */}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            gap: "1.5rem",
-          }}
-        >
+        <div className="navbar-buttons">
           <Link
+            to={"/contact"}
             style={{
-              padding: "0.5rem 1rem",
               textDecoration: "none",
-              fontWeight: "600",
               color: "white",
               backgroundColor: "#6854FC",
-              borderRadius: "1rem",
+              padding: "1rem 2rem",
+              borderRadius: "2rem",
             }}
-            to="/contact"
-            className="navbar-link-contact"
           >
             Connect with us
           </Link>
-          <GiHamburgerMenu size="2rem" onClick={toggleCollapse} className="hamburger" />
-        </div>
 
+          <div className="navigation__profile" ref={dropdownRef1}>
+            <GiHamburgerMenu
+              size="2rem"
+              className="navigation__profile__image"
+              onClick={toggleDropdown}
+            />
 
-        <div
-
-          className={`${collapseOpenState ? "collapse-links--state-open" : "collapse-links--state-collapse"}
-        collapse-links`
-          }
-          ref={collapsableRef}>
-          {menus.map((menu) => (
-            <Link
-              key={menu.name}
-              style={{
-                padding: "0.5rem 1rem",
-                fontWeight: "normal",
-                color: "black",
-              }}
-              to={menu.link}
-              onClick={toggleCollapse}
-            >
-              {menu.name}
-            </Link>
-          ))}
-
-
+            {isDropdownOpen && (
+              <div
+                className="navigation__profile__options"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="options-menu"
+              >
+                <div role="none">
+                  {menus.map((menu) => (
+                    <Link
+                      key={menu.name}
+                      className="navigation__profile__options__item"
+                      role="menuitem"
+                      to={menu.link}
+                    >
+                      {menu.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </header>
-
-
-      {/* <div
-        className={"collapseOpen-links--component"}></div> */}
-
     </div>
   );
 };
