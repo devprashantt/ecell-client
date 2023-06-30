@@ -40,9 +40,17 @@ const Navbar = () => {
   };
 
   const handleClickOutside = (event) => {
-    if (dropdownRef1.current && !dropdownRef1.current.contains(event.target)) {
+    if (
+      dropdownRef1.current &&
+      !dropdownRef1.current.contains(event.target) &&
+      !event.target.classList.contains("navigation__profile__options__item")
+    ) {
       setIsDropdownOpen(false);
     }
+  };
+
+  const handleClickInsideDropdown = () => {
+    setIsDropdownOpen(false);
   };
 
   useEffect(() => {
@@ -73,18 +81,20 @@ const Navbar = () => {
             gap: "1rem",
           }}
         >
-          <img
-            src={images.logo}
-            alt="logo"
-            style={{
-              width: "2.5rem",
-              height: "2.5rem",
-              marginBottom: "0.5rem",
-              objectFit: "contain",
-            }}
-          />
-          <a
-            href="/"
+          <Link to={"/"}>
+            <img
+              src={images.logo}
+              alt="logo"
+              style={{
+                width: "2.5rem",
+                height: "2.5rem",
+                marginBottom: "0.5rem",
+                objectFit: "contain",
+              }}
+            />
+          </Link>
+          <Link
+            to={"/"}
             style={{
               textDecoration: "none",
               fontWeight: "bold",
@@ -93,7 +103,7 @@ const Navbar = () => {
             }}
           >
             E Cell <span>IIIT Sonepat</span>
-          </a>
+          </Link>
         </div>
         {/* middle part */}
         <div className="navbar-links">
@@ -116,6 +126,7 @@ const Navbar = () => {
         <div className="navbar-buttons">
           <Link
             to={"/contact"}
+            className="navbar__connect"
             style={{
               textDecoration: "none",
               color: "white",
@@ -140,6 +151,7 @@ const Navbar = () => {
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="options-menu"
+                onClick={handleClickInsideDropdown}
               >
                 <div role="none">
                   {menus.map((menu) => (

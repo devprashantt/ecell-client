@@ -228,9 +228,9 @@ const Contact = () => {
             width: "100%",
           }}
         >
-          {linkedinUser.map((user, index) => (
+          {linkedinUser.map((user) => (
             <LinkedInBadge
-              key={index}
+              key={user.name}
               link={user.link}
               name={user.name}
               headline={user.headline}

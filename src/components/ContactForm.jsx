@@ -244,9 +244,9 @@ function ContactForm() {
         <button
           type="submit"
           style={{
-            padding: "0 2rem",
             width: "30%",
             height: "50px",
+            textAlign: "center",
             borderRadius: "0.8rem",
             border: "none",
             backgroundColor: "#6854FC",

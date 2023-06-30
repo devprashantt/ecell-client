@@ -48,7 +48,6 @@ const Admin = () => {
           style={{
             width: "6rem",
             height: "6rem",
-            marginTop: "2rem",
           }}
         />
         <h2 className="admin-page__heading" style={textStyle}>

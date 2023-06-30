@@ -1,16 +1,20 @@
-.form--component {
-  max-width: 80%;
-}
+.form--component {}
 
 @media (max-width: 43em) {
   .form--component {
     max-width: 95%;
   }
 }
+
 @media (max-width: 576px) {
-  .form--component > div {
+  .form--component>div {
     flex-direction: column;
     max-width: 70%;
+
+  }
+
+  button {
+    width: 100% !important;
   }
 }
 

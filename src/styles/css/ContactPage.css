@@ -9,23 +9,27 @@
     flex-direction: column;
     gap: 3em !important;
   }
+
   .contact--block-info {
     max-width: 80%;
     padding: 2rem !important;
   }
 }
+
 @media (max-width: 30em) {
   .contact--block-info {
     max-width: 85%;
     align-items: center;
     text-align: center;
-    padding: 1rem !important;
+    padding: 2rem !important;
   }
-  .contact--block-info > div {
+
+  .contact--block-info>div {
     text-align: center;
     margin: auto;
   }
-  .contact--block-info > div > p {
+
+  .contact--block-info>div>p {
     margin: auto !important;
   }
 }

@@ -1,9 +1,9 @@
 @media (max-width: 768px) {
   .work--element-img {
-    width: 15rem;
     min-height: 0;
   }
 }
+
 @media (max-width: 43em) {
   .work--block-images {
     flex-direction: column !important;

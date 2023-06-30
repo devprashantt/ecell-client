@@ -1,5 +1,5 @@
 // import responsive styles
-import './../styles/css/EventsOrganizedStyle.css';
+import "./../styles/css/EventsOrganizedStyle.css";
 
 // events icon from rect-icons
 import {
@@ -77,22 +77,30 @@ const EventsOrganized = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-
-        padding: "0 3%",
+        gap: "2rem",
       }}
-      className='eventsOrganized-component'
+      className="eventsOrganized-component"
     >
-      <h1 >Events Organized</h1>
+      <h1
+        style={{
+          margin: " 0",
+        }}
+      >
+        Events Organized
+      </h1>
       <p
         style={{
           textAlign: "center",
           maxWidth: "50rem",
           color: "rgba(0, 0, 0, 0.5)",
+          margin: "0",
         }}
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        voluptatum, quibusdam, quia, quos voluptates voluptatibus quod
-        voluptatem quas doloribus quidem voluptate. Quisquam voluptatum,
+        We have organized many events in the past and we are planning to
+        organize more in the future.The E-cell organizes various events
+        throughout the year to provide a platform for budding entrepreneurs to
+        learn, network, and showcase their ideas.Here are some events organized
+        by IIIT Sonepat E-cell.
       </p>
       <div
         style={{
@@ -100,7 +108,6 @@ const EventsOrganized = () => {
           display: "grid",
           gridTemplateColumns: "repeat(2, minmax(15rem, 1fr))",
           gap: "1rem",
-          margin: "2rem 0",
         }}
         className="eventsOrganized-events"
       >
@@ -112,10 +119,6 @@ const EventsOrganized = () => {
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
-
-              padding: "1rem 0",
-
-              gap: "1rem",
             }}
           >
             <div
@@ -148,7 +151,6 @@ const EventsOrganized = () => {
                   textAlign: "center",
                   maxWidth: "20rem",
                 }}
-
               >
                 {event.description}
               </p>

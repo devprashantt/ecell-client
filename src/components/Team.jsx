@@ -4,11 +4,18 @@ import "./../styles/css/TeamStyle.css";
 const Team = () => {
   const team = [
     {
-      name: "Prashant Kumar Singh",
+      name: "Aditya Rawat",
+      title: "President",
+      linkedIn: "https://www.linkedin.com/in/aditya-r-1a607a114",
+      gitHub: "https://github.com/theadityarawat",
+      img: "https://media.licdn.com/dms/image/D4D03AQH8rC8fU6w1cg/profile-displayphoto-shrink_400_400/0/1680752943485?e=1693440000&v=beta&t=9reUN2dt-g95CGwqYMOjjI70FDMbafF0dsjYL-i4Blw",
+    },
+    {
+      name: "Prashant Kumar",
       title: "Technical Lead",
       linkedin: "https://www.linkedin.com/in/devprashantt/",
       github: "https://github.com/devprashantt",
-      img: "https://avatars.githubusercontent.com/u/96608616?v=4",
+      img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688158114/team/photo1685485087-modified_pqifla.png",
     },
 
     {
@@ -16,9 +23,36 @@ const Team = () => {
       title: "Member",
       linkedIn: "https://www.linkedin.com/in/mohit-singh-74a31b246",
       github: "https://github.com/West-Tiwan",
-      img: "",
+      img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688156706/team/IMG-20230630-WA0037_-_Mohit_Singh_j2089x.jpg",
     },
-
+    {
+      name: "Tanishk Bhardwaj",
+      title: "Member",
+      linkedin: "https://www.linkedin.com/in/tanishk-bhardwaj-9602a11b3",
+      github: "https://github.com/10ishk",
+      img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688156705/team/Tanishk_-_Tanishk_Bhardwaj_okhhgm.jpg",
+    },
+    {
+      name: "Zohra Ahmad",
+      title: "Member",
+      linkedIn: "https://www.linkedin.com/in/zohra-ahmad",
+      gitHub: "https://github.com/zohra-ahmad",
+      img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688156707/team/IMG_5086_-_Zohra_Ahmad_eel22s.png",
+    },
+    {
+      name: "Arnav Gupta",
+      title: "Member",
+      linkedin: "https://www.linkedin.com/in/arnav-gupta-8351641b6",
+      github: "https://github.com/arnavgupta27",
+      img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688156706/team/IMG_20230321_210442_012_-_Arnav_Gupta_vbocvn.jpg",
+    },
+    {
+      name: "Prince",
+      title: "Member",
+      linkedin: "https://in.linkedin.com/in/prince-1b7a8924a",
+      github: "https://github.com/Catabolic-Neuron",
+      img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688156706/team/IMG_20230701_002140_507_-_Prince_chm2ij.jpg",
+    },
     {
       name: "Priyanshu Kumawat",
       title: "Member",
@@ -28,26 +62,10 @@ const Team = () => {
     },
 
     {
-      name: "Zohra Ahmad",
-      title: "Member",
-      linkedIn: "https://www.linkedin.com/in/zohra-ahmad",
-      gitHub: "https://github.com/zohra-ahmad",
-      img: "",
-    },
-
-    {
       name: "Archit Anand",
       title: "Member",
       linkedIn: "https://www.linkedin.com/in/archit-anand-49494a257",
       gitHub: "https://github.com/architanand8986",
-      img: "",
-    },
-
-    {
-      name: "Aditya Rawat",
-      title: "President",
-      linkedIn: "https://www.linkedin.com/in/aditya-r-1a607a114",
-      gitHub: "https://github.com/theadityarawat",
       img: "",
     },
 
@@ -100,14 +118,6 @@ const Team = () => {
     },
 
     {
-      name: "Prince",
-      title: "Member",
-      linkedin: "https://in.linkedin.com/in/prince-1b7a8924a",
-      github: "https://github.com/Catabolic-Neuron",
-      img: "https://media.licdn.com/dms/image/D4D03AQEt7jqRIJdwug/profile-displayphoto-shrink_400_400/0/1680030529686?e=1688601600&v=beta&t=WxsaqFmjqDHu6GXbFu-s4jV8_AfQxR1szINx7qkceEU",
-    },
-
-    {
       name: "Prateek Yaduvanshi",
       title: "Social Media Lead",
       linkedin: "https://www.linkedin.com/in/prateek-yaduvanshi-3bb847226/",
@@ -156,13 +166,6 @@ const Team = () => {
     },
 
     {
-      name: "Tanishk Bhardwaj",
-      title: "Member",
-      linkedin: "https://www.linkedin.com/in/tanishk-bhardwaj-9602a11b3",
-      github: "https://github.com/10ishk",
-      img: "",
-    },
-    {
       name: "Aaryan Yadav",
       title: "Member",
       linkedin: "https://www.linkedin.com/in/aryan-yadav-33b693275",
@@ -201,14 +204,6 @@ const Team = () => {
       github: "https://github.com/PrabhneetSingh02",
       img: "",
     },
-
-    {
-      name: "Arnav Gupta",
-      title: "Member",
-      linkedin: "https://www.linkedin.com/in/arnav-gupta-8351641b6",
-      github: "https://github.com/arnavgupta27",
-      img: "",
-    },
   ];
   return (
     <div
@@ -240,7 +235,7 @@ const Team = () => {
         are passionate about entrepreneurship and fostering a culture of
         innovation. Together, we work towards creating a supportive and
         inspiring environment for students to explore their entrepreneurial
-        potential. Here are some key members of our team:{" "}
+        potential.
       </p>
       <div
         style={{
@@ -254,43 +249,52 @@ const Team = () => {
         className="team--block-members"
       >
         {team.map((member) => (
-          <div
+          <a
+            href={member.linkedin}
             key={member.name}
             style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "10px",
+              textDecoration: "none",
+              color: "black",
             }}
-            className="team--block-member-info"
           >
-            <img
-              src={member.img}
-              alt={member.name}
+            <div
               style={{
-                width: "150px",
-                height: " 150px",
-                borderRadius: "50%",
-                backgroundColor: "lightgray",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                gap: "10px",
               }}
-            />
-            <h3
-              style={{
-                margin: "0",
-              }}
+              className="team--block-member-info"
             >
-              {member.name}
-            </h3>
-            <p
-              style={{
-                margin: "0",
-                color: "rgba(0, 0, 0, 0.5)",
-              }}
-            >
-              {member.title}
-            </p>
-          </div>
+              <img
+                src={member.img}
+                alt={member.name}
+                style={{
+                  width: "150px",
+                  height: " 150px",
+                  borderRadius: "50%",
+                  backgroundColor: "lightgray",
+                  objectFit: "cover",
+                }}
+              />
+              <h3
+                style={{
+                  margin: "0",
+                }}
+              >
+                {member.name}
+              </h3>
+              <p
+                style={{
+                  margin: "0",
+                  color: "rgba(0, 0, 0, 0.5)",
+                }}
+              >
+                {member.title}
+              </p>
+            </div>
+          </a>
         ))}
       </div>
     </div>

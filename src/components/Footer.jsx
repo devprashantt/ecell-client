@@ -21,10 +21,6 @@ const Footer = () => {
       link: "/events",
     },
     {
-      name: "Team",
-      link: "/about",
-    },
-    {
       name: "Contact",
       link: "/contact",
     },
