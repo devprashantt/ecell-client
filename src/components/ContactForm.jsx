@@ -245,6 +245,7 @@ function ContactForm() {
           type="submit"
           style={{
             padding: "0 2rem",
+            width: "30%",
             height: "50px",
             borderRadius: "0.8rem",
             border: "none",

@@ -51,13 +51,11 @@ const About = () => {
           to={"/about"}
           style={{
             textDecoration: "none",
+            color: "white",
             backgroundColor: "#6854FC",
-            fontWeight: "bold",
-            fontSize: "1rem",
-            borderRadius: "20px",
-            padding: "10px 15px",
+            padding: "1rem 2rem",
+            borderRadius: "2rem",
           }}
-          className="about--element-link"
         >
           About us
         </Link>

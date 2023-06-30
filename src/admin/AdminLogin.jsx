@@ -1,5 +1,6 @@
 import { useState, useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
+import { images } from "../constants";
 
 const AdminLogin = () => {
   const { login } = useContext(AuthContext);
@@ -60,7 +61,34 @@ const AdminLogin = () => {
         width: "100%",
       }}
     >
-      <h1>Admin Login</h1>
+      <img
+        src={images.logo}
+        alt="logo"
+        style={{
+          width: "6rem",
+          height: "6rem",
+          marginTop: "2rem",
+        }}
+      />
+      <h1
+        style={{
+          marginTop: "2rem 0 0 0",
+        }}
+      >
+        Admin Login
+      </h1>
+      <p
+        className="admin-page__desc"
+        style={{
+          textAlign: "center",
+          width: "90%",
+        }}
+      >
+        Welcome to the Admin Page, where you have full control and access to
+        manage and oversee various aspects of the platform. As an admin, you
+        play a crucial role in ensuring the smooth operation and success of the
+        system.
+      </p>
       <form
         onSubmit={handleCreateEvent}
         style={{

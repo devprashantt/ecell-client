@@ -1,6 +1,7 @@
 // import { Link } from "react-router-dom";
 
 //import components
+import { images } from "../constants";
 import { Message, Team } from "./../components";
 
 // import responsive styles
@@ -26,16 +27,20 @@ const About = () => {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          gap: "1rem",
         }}
       >
-        <h1
+        <img
+          src={images.logo}
+          alt="logo"
           style={{
-            margin: "2rem 0 0 0",
+            marginTop: "2rem",
+            padding: "0",
+
+            maxWidth: "10rem",
+            maxHeight: "20rem",
           }}
-        >
-          About us
-        </h1>
+        />
+        <h1>About us</h1>
         <p
           style={{
             margin: "0",
@@ -55,6 +60,21 @@ const About = () => {
           enhance the entrepreneurial mindset and ignite the spirit of
           innovation.
         </p>
+        <a
+          href="https://issuu.com/ecelliiitsonepat/docs/e_cell_iiit_sonepat"
+          target="_blank"
+          rel="noreferrer"
+          style={{
+            margin: "2rem 0",
+            textDecoration: "none",
+            color: "white",
+            backgroundColor: "#6854FC",
+            padding: "1rem 2rem",
+            borderRadius: "2rem",
+          }}
+        >
+          Brochure
+        </a>
       </div>
       <Message
         heading={"You guessed it. We’re changing the game."}

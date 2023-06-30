@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { images } from "../constants";
 
 const paraStyle = {
   fontWeight: "medium",
@@ -31,7 +32,25 @@ const Admin = () => {
         padding: "2%",
       }}
     >
-      <div className="admin-page">
+      <div
+        className="admin-page"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "start",
+          padding: "0 4%",
+        }}
+      >
+        <img
+          src={images.logo}
+          alt="logo"
+          style={{
+            width: "6rem",
+            height: "6rem",
+            marginTop: "2rem",
+          }}
+        />
         <h2 className="admin-page__heading" style={textStyle}>
           Admin Page
         </h2>
