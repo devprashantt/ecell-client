@@ -13,5 +13,6 @@ import Team from "./Team";
 import ContactForm from "./ContactForm";
 import EventCard from "./EventCard";
 import CollegeCard from "./CollegeCard";
+import LinkedInBadge from "./LinkedinBadge";
 
-export { Navbar, Footer, Layout, Header, EventsOrganized, Partner, Work, Message, Process, About, Service, CollegeCard, Team, ContactForm, EventCard };
+export { Navbar, Footer, Layout, Header, EventsOrganized, Partner, Work, Message, Process, About, Service, LinkedInBadge, CollegeCard, Team, ContactForm, EventCard };

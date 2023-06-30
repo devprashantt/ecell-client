@@ -92,28 +92,26 @@ const Header = () => {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
+            marginTop: "2rem",
 
             width: "fit-content",
-            gap: "1rem",
+            gap: "1.5rem",
           }}
         >
-          <button
+          <Link
+            to={"/about"}
             style={{
-              background: "#6854FC",
-              border: "none",
-              borderRadius: "1rem",
-
-              padding: "1rem 1rem",
-
-              fontSize: "1.2rem",
-              color: "#fff",
-
-              cursor: "pointer",
+              textDecoration: "none",
+              color: "white",
+              backgroundColor: "#6854FC",
+              padding: "1rem 2rem",
+              borderRadius: "2rem",
             }}
           >
-            Know More
-          </button>
+            About us
+          </Link>
           <Link
+            to={"/events"}
             style={{
               color: "#6854FC",
               border: "none",

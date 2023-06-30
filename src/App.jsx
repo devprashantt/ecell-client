@@ -25,8 +25,23 @@ import { AuthContext } from "./context/AuthContext";
 const App = () => {
   const { isLoggedIn } = useContext(AuthContext);
 
+  const scrollToTop = () => {
+    const scrollOptions = {
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    };
+
+    try {
+      window.scrollTo(scrollOptions);
+    } catch (error) {
+      // Scroll to top fallback for older browsers
+      window.scrollTo(0, 0);
+    }
+  };
+
   useEffect(() => {
-    window.scrollTo(0, 0);
+    scrollToTop();
   }, []);
 
   return (

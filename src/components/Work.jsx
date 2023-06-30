@@ -32,6 +32,7 @@ const Work = () => {
       link: "https://www.google.com",
     },
   ];
+
   return (
     <div
       style={{

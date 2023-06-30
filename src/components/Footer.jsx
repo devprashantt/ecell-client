@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 // import responsive styles
-import './../styles/css/FooterStyle.css';
+import "./../styles/css/FooterStyle.css";
 
 //social icon from react-icons
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
@@ -22,7 +22,7 @@ const Footer = () => {
     },
     {
       name: "Team",
-      link: "/team",
+      link: "/about",
     },
     {
       name: "Contact",
@@ -33,7 +33,7 @@ const Footer = () => {
   const socials = [
     {
       name: "Facebook",
-      link: "https://www.facebook.com/ecelliiitsonepat/",
+      link: "https://www.facebook.com/people/E-Cell-IIIT-Sonepat/100063733518694/",
       icon: (
         <FaFacebook
           style={{
@@ -45,7 +45,7 @@ const Footer = () => {
     },
     {
       name: "Instagram",
-      link: "https://www.instagram.com/ecelliiitsonepat/",
+      link: "https://www.instagram.com/ecell.iiitsonepat/",
       icon: (
         <FaInstagram
           style={{
@@ -57,7 +57,7 @@ const Footer = () => {
     },
     {
       name: "LinkedIn",
-      link: "https://www.linkedin.com/company/ecell-iiit-sonepat/",
+      link: "https://www.linkedin.com/company/ecelliiitsonepat/",
       icon: (
         <FaLinkedin
           style={{
