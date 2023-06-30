@@ -9,22 +9,17 @@
   }
 }
 .collapse-links {
-  position: absolute;
-  right: 2rem;
-  top: 5em;
-  background-color: white;
-  border-radius: 20px 10px 20px 20px;
+  background-color: rgba(196, 196, 196, 0.05);
+  display: flex;
   font-size: 1.1rem;
   color: rgb(104, 84, 252);
-  display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 0.33rem;
   align-items: flex-end;
-  transition: height 0.35s;
-  transition-timing-function: ease-in-out;
-  width: 10rem;
+  transition: height 0.4s ease-out;
   overflow: hidden;
+  padding-right: 1em;
 }
 
 .collapse-links a:hover {
@@ -36,8 +31,7 @@
 }
 
 .collapse-links--state-open {
-  height: 18rem;
-  border: 2px solid;
+  height: 15rem;
 }
 
 /*# sourceMappingURL=NavbarStyle.css.map */

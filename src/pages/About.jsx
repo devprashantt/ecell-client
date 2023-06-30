@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Message, Team } from "./../components";
 
 // import responsive styles
-import "./../styles/css/AboutPage.css";
+import './../styles/css/AboutPage.css';
 
 //import images
 import { images } from "./../constants";
@@ -40,20 +40,10 @@ const About = () => {
           style={{
             margin: "0",
             padding: "0 2em",
-            textAlign: "justify",
+            textAlign: "center"
           }}
         >
-          At the IIIT Sonepat E-Cell, we believe in fostering entrepreneurship
-          and innovation among the talented students of IIIT Sonepat. Our
-          mission is to inspire, educate, and empower the next generation of
-          entrepreneurs, equipping them with the necessary skills and resources
-          to transform their innovative ideas into successful ventures. Our
-          E-Cell serves as a vibrant platform that encourages students to
-          explore the world of entrepreneurship and provides them with a
-          supportive community to nurture their entrepreneurial aspirations. We
-          offer a wide range of programs, activities, and events designed to
-          enhance the entrepreneurial mindset and ignite the spirit of
-          innovation.
+          Pulvinar auctor nisl, volutpat turpis enim id.{" "}
         </p>
       </div>
       <Message
