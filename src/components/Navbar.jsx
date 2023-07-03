@@ -124,19 +124,19 @@ const Navbar = () => {
         </div>
         {/* right part */}
         <div className="navbar-buttons">
-          <Link
-            to={"/contact"}
+          <a
+            href="https://issuu.com/ecelliiitsonepat/docs/e_cell_iiit_sonepat"
             className="navbar__connect"
             style={{
               textDecoration: "none",
               color: "white",
               backgroundColor: "#6854FC",
-              padding: "1rem 2rem",
+              padding: "0.8rem 1.6rem",
               borderRadius: "2rem",
             }}
           >
-            Connect with us
-          </Link>
+            Brochure
+          </a>
 
           <div className="navigation__profile" ref={dropdownRef1}>
             <GiHamburgerMenu

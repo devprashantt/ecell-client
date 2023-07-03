@@ -27,17 +27,15 @@ const About = () => {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
+          padding: "2rem",
         }}
       >
         <img
           src={images.logo}
           alt="logo"
           style={{
-            marginTop: "2rem",
-            padding: "0",
-
-            maxWidth: "10rem",
-            maxHeight: "20rem",
+            width: "6rem",
+            height: "6rem",
           }}
         />
         <h1>About us</h1>

@@ -17,13 +17,27 @@ const Team = () => {
       github: "https://github.com/devprashantt",
       img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688158114/team/photo1685485087-modified_pqifla.png",
     },
+    {
+      name: "Prateek",
+      title: "Social Media Lead",
+      linkedin: "https://www.linkedin.com/in/prateek-yaduvanshi-3bb847226/",
+      github: "https://github.com/okprateek",
+      img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688370179/team/1641880243216_1_-_Prateek_Yaduvanshi_wuvzp8.jpg",
+    },
+    {
+      name: "Nil Mani",
+      title: "Sponsorship & PR",
+      linkedin: "https://in.linkedin.com/in/nil-mani-7723a0157",
+      github: "https://github.com/nilmani9430",
+      img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688370180/team/web_-_Nil_Mani_kxtark.jpg",
+    },
 
     {
-      name: "Mohit Singh",
-      title: "Member",
-      linkedIn: "https://www.linkedin.com/in/mohit-singh-74a31b246",
-      github: "https://github.com/West-Tiwan",
-      img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688156706/team/IMG-20230630-WA0037_-_Mohit_Singh_j2089x.jpg",
+      name: "Pratik Gupta",
+      title: "Events Lead",
+      linkedin: "https://www.linkedin.com/in/pratik-gupta-8a34a2229",
+      github: "https://github.com/Pratik1603",
+      img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688370178/team/Pratik_Gupta_-_Pratik_Gupta_ulrnmq.png",
     },
     {
       name: "Tanishk Bhardwaj",
@@ -31,6 +45,13 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/tanishk-bhardwaj-9602a11b3",
       github: "https://github.com/10ishk",
       img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688156705/team/Tanishk_-_Tanishk_Bhardwaj_okhhgm.jpg",
+    },
+    {
+      name: "Mohit Singh",
+      title: "Member",
+      linkedIn: "https://www.linkedin.com/in/mohit-singh-74a31b246",
+      github: "https://github.com/West-Tiwan",
+      img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688156706/team/IMG-20230630-WA0037_-_Mohit_Singh_j2089x.jpg",
     },
     {
       name: "Zohra Ahmad",
@@ -54,6 +75,83 @@ const Team = () => {
       img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688156706/team/IMG_20230701_002140_507_-_Prince_chm2ij.jpg",
     },
     {
+      name: "Anurag Daksh",
+      title: "Member",
+      linkedIn: "https://www.linkedin.com/in/anurag-daksh-42b692228",
+      gitHub: "https://github.com/anuragdaksh7",
+      img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688370180/team/pfp_-_Anurag_Daksh_crbvql.jpg",
+    },
+    {
+      name: "Sahil Yadav",
+      title: "Member",
+      linkedIn: "https://www.linkedin.com/in/sahil-yadav-054b54223",
+      gitHub: "https://github.com/Sahil-Yadav-2505",
+      img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688370179/team/Sahil_Yadav_1_-_Sahil_Yadav_iawsaq.png",
+    },
+    {
+      name: "Jayesh Yadav",
+      title: "Member",
+      linkedin: "https://www.linkedin.com/in/jayesh-yadav-6aab06265",
+      github: "https://github.com/jayeshyadav31",
+      img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688370178/team/Jayesh_Yadav_-_Jayesh_Yadav_jygefk.jpg",
+    },
+    {
+      name: "Devesh Jangir",
+      title: "Member",
+      linkedin: "https://www.linkedin.com/in/deveshjangir",
+      github: "https://github.com/imdevesh01",
+      img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688370178/team/Devesh_Jangir_-_Devesh_Jangir_nqthmf.png",
+    },
+    {
+      name: "Nikshitha",
+      title: "Member",
+      linkedin: "https://www.linkedin.com/in/v-nikshitha-860655258/",
+      github: "https://github.com/nikshitha1312",
+      img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688370181/team/WhatsApp_Image_2023-07-01_at_7.25.13_PM_-_V_Nikshitha_uc7hcn.jpg",
+    },
+    {
+      name: "Ashwin Jharia",
+      title: "Member",
+      linkedin: "https://www.linkedin.com/in/ashwin-jharia-05a813234",
+      github: "https://github.com/AshwinJharia",
+      img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688370180/team/20220403_195738_-_Ashwin_Jharia_yp5kcn.png",
+    },
+    {
+      name: "Medhavini mathur",
+      title: "Member",
+      linkedin: "https://www.linkedin.com/in/medhavini-mathur-06688b204",
+      github: "https://github.com/MedhaviniMathur1804",
+      img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688370181/team/IMG_20230701_194358_-_MEDHAVINI_MATHUR_ifcemk.jpg",
+    },
+    {
+      name: "Shreeya khatri",
+      title: "Member",
+      linkedin: "https://www.linkedin.com/in/shreeya-khatri-860650258",
+      github: "https://github.com/shreeya1-23",
+      img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688370180/team/Photo_from_Shreeya_-_Shreeya_Khatri_jpko64.jpg",
+    },
+    {
+      name: "Shikhar Gupta",
+      title: "Member",
+      linkedin: "https://www.linkedin.com/in/shikhar-gupta-389552251",
+      github: "https://github.com/aalugupta",
+      img: "https://res.cloudinary.com/dfjag3udo/image/upload/v1688370178/team/IMG_1708_-_Shikhar_Gupta_oq7jzx.jpg",
+    },
+    {
+      name: "Akshat Trivedi",
+      title: "Member",
+      linkedin: "https://www.linkedin.com/in/akshat-trivedi-859147255",
+      github: "https://github.com/atrivedi1611",
+      img: "",
+    },
+    {
+      name: " Prabhneet Singh",
+      title: "Member",
+      linkedin: "https://www.linkedin.com/in/prabhneet-singh-75786722b",
+      github: "https://github.com/PrabhneetSingh02",
+      img: "",
+    },
+    {
       name: "Priyanshu Kumawat",
       title: "Member",
       linkedIn: "https://www.linkedin.com/in/priyanshu-kumawat-b61195220",
@@ -68,39 +166,6 @@ const Team = () => {
       gitHub: "https://github.com/architanand8986",
       img: "",
     },
-
-    {
-      name: "Anurag Daksh",
-      title: "Member",
-      linkedIn: "https://www.linkedin.com/in/anurag-daksh-42b692228",
-      gitHub: "https://github.com/anuragdaksh7",
-      img: "",
-    },
-
-    {
-      name: "Sahil Yadav",
-      title: "Member",
-      linkedIn: "https://www.linkedin.com/in/sahil-yadav-054b54223",
-      gitHub: "https://github.com/Sahil-Yadav-2505",
-      img: "",
-    },
-
-    {
-      name: "Jayesh Yadav",
-      title: "Member",
-      linkedin: "https://www.linkedin.com/in/jayesh-yadav-6aab06265",
-      github: "https://github.com/jayeshyadav31",
-      img: "",
-    },
-
-    {
-      name: "Devesh Jangir",
-      title: "Member",
-      linkedin: "https://www.linkedin.com/in/deveshjangir",
-      github: "https://github.com/imdevesh01",
-      img: "https://drive.google.com/file/d/1rFwoS3ywrDCi-psPRza3pTWrK3EZv6Uh/view?usp=drivesdk",
-    },
-
     {
       name: "Abhisek Tiwari",
       title: "Member",
@@ -116,23 +181,6 @@ const Team = () => {
       github: "https://github.com/TamishBajaj",
       img: "",
     },
-
-    {
-      name: "Prateek Yaduvanshi",
-      title: "Social Media Lead",
-      linkedin: "https://www.linkedin.com/in/prateek-yaduvanshi-3bb847226/",
-      github: "https://github.com/okprateek",
-      img: "",
-    },
-
-    {
-      name: "Nikshitha",
-      title: "Member",
-      linkedin: "https://www.linkedin.com/in/v-nikshitha-860655258/",
-      github: "https://github.com/nikshitha1312",
-      img: "",
-    },
-
     {
       name: "Dhruv Thakur",
       title: "Member",
@@ -140,15 +188,6 @@ const Team = () => {
       github: "https://github.com/dhruvThakur203",
       img: "",
     },
-
-    {
-      name: "Medhavini mathur",
-      title: "Member",
-      linkedin: "https://www.linkedin.com/in/medhavini-mathur-06688b204",
-      github: "https://github.com/MedhaviniMathur1804",
-      img: "",
-    },
-
     {
       name: "Gaurav Kumar Singh",
       title: "Member",
@@ -170,38 +209,6 @@ const Team = () => {
       title: "Member",
       linkedin: "https://www.linkedin.com/in/aryan-yadav-33b693275",
       github: "https://github.com/Aaryanyd06",
-      img: "",
-    },
-
-    {
-      name: "Shreeya khatri",
-      title: "Member",
-      linkedin: "https://www.linkedin.com/in/shreeya-khatri-860650258",
-      github: "https://github.com/shreeya1-23",
-      img: "",
-    },
-
-    {
-      name: "Shikhar Gupta",
-      title: "Member",
-      linkedin: "https://www.linkedin.com/in/shikhar-gupta-389552251",
-      github: "https://github.com/aalugupta",
-      img: "",
-    },
-
-    {
-      name: "Akshat Trivedi",
-      title: "Member",
-      linkedin: "https://www.linkedin.com/in/akshat-trivedi-859147255",
-      github: "https://github.com/atrivedi1611",
-      img: "",
-    },
-
-    {
-      name: " Prabhneet Singh",
-      title: "Member",
-      linkedin: "https://www.linkedin.com/in/prabhneet-singh-75786722b",
-      github: "https://github.com/PrabhneetSingh02",
       img: "",
     },
   ];

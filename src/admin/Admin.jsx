@@ -29,7 +29,7 @@ const Admin = () => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "start",
-        padding: "2%",
+        padding: "2rem",
       }}
     >
       <div
