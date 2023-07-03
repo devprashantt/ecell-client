@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import {
   Home,
   About,
@@ -23,26 +23,13 @@ import { Layout } from "./components";
 import { AuthContext } from "./context/AuthContext";
 
 const App = () => {
+  const { pathname } = useLocation();
+
   const { isLoggedIn } = useContext(AuthContext);
 
-  const scrollToTop = () => {
-    const scrollOptions = {
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    };
-
-    try {
-      window.scrollTo(scrollOptions);
-    } catch (error) {
-      // Scroll to top fallback for older browsers
-      window.scrollTo(0, 0);
-    }
-  };
-
   useEffect(() => {
-    scrollToTop();
-  }, []);
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <Layout>

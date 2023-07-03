@@ -1,20 +1,23 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useEffect, useState, useContext } from "react";
+import { useParams, Link } from "react-router-dom";
+
 import "./../styles/sass/EventDetails.scss";
 
+import { AuthContext } from "./../context/AuthContext";
+import { deleteEvent, getEvent } from "../services/eventApi";
+
 const EventDetails = () => {
+  const { isLoggedIn } = useContext(AuthContext);
   const { id } = useParams();
   const [event, setEvent] = useState(null);
 
+  const handleDelete = async () => {
+    await deleteEvent(id);
+    window.location.href = "/events";
+  };
+
   useEffect(() => {
-    const fetchData = async () => {
-      const res = await fetch(
-        `${import.meta.env.VITE_BACKEND_HOST}/event/${id}`
-      );
-      const data = await res.json();
-      setEvent(data);
-    };
-    fetchData();
+    getEvent(id).then((res) => setEvent(res.data));
   }, [id]);
 
   if (!event) {
@@ -49,6 +52,30 @@ const EventDetails = () => {
             Register Now
           </a>
         </p>
+        {isLoggedIn && (
+          <div>
+            <p className="event-details__content__edit">
+              <Link
+                to={`/admin/edit-event/${id}`}
+                style={{
+                  textDecoration: "none",
+                  color: "black",
+                }}
+              >
+                Edit
+              </Link>
+            </p>
+            <p
+              onClick={handleDelete}
+              style={{
+                cursor: "pointer",
+                color: "red",
+              }}
+            >
+              Delete
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );

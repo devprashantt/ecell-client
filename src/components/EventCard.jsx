@@ -24,7 +24,15 @@ const EventCard = ({ title, img, description, date, registrationLink }) => {
 
   let linkComponent;
   if (eventDate < currentDate) {
-    linkComponent = <p>Ended</p>;
+    linkComponent = (
+      <p
+        style={{
+          color: "red",
+        }}
+      >
+        Event Ended
+      </p>
+    );
   } else {
     linkComponent = (
       <a
@@ -49,7 +57,7 @@ const EventCard = ({ title, img, description, date, registrationLink }) => {
         <p>{truncatedString}...</p>
         <div className="event__more">
           <p>{dateFormatted}</p>
-          {linkComponent}
+          <p className="registration">{linkComponent}</p>
         </div>
       </div>
     </div>
