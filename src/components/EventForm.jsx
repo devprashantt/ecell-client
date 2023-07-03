@@ -46,7 +46,7 @@ const EventForm = ({ initialEvent }) => {
     // Send request to server to create event
     await createEvent(formData);
     // Redirect to event details page
-    window.location.href = `/events/${initialEvent._id}`;
+    window.location.href = "/events/";
   };
 
   const handleUpdateEvent = async (e) => {
