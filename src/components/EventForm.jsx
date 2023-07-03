@@ -3,6 +3,7 @@ import { updateEvent, createEvent } from "../services/eventApi";
 import PropTypes from "prop-types";
 
 const EventForm = ({ initialEvent }) => {
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     title: initialEvent ? initialEvent.title : "",
     description: initialEvent ? initialEvent.description : "",
@@ -43,8 +44,15 @@ const EventForm = ({ initialEvent }) => {
     // Prevent default form submission
     e.preventDefault();
 
+    // Set loading state to true
+    setIsLoading(true);
+
     // Send request to server to create event
     await createEvent(formData);
+
+    // Set loading state to false
+    setIsLoading(false);
+
     // Redirect to event details page
     window.location.href = "/events/";
   };
@@ -53,8 +61,14 @@ const EventForm = ({ initialEvent }) => {
     // Prevent default form submission
     e.preventDefault();
 
+    // Set loading state to true
+    setIsLoading(true);
+
     // Send request to server to update event
     await updateEvent(initialEvent._id, formData);
+
+    // Set loading state to false
+    setIsLoading(false);
 
     // Redirect to event details page
     window.location.href = `/events/${initialEvent._id}`;
@@ -162,7 +176,11 @@ const EventForm = ({ initialEvent }) => {
           cursor: "pointer",
         }}
       >
-        {initialEvent ? "Update Event" : "Create Event"}
+        {isLoading
+          ? "Loading..."
+          : initialEvent
+          ? "Update Event"
+          : "Create Event"}
       </button>
     </form>
   );
